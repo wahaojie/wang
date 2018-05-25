@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>中酒网-登录</title>
         <style type="text/css">
         	*{
         		margin: 0;
@@ -10,6 +10,9 @@
         	}
         	li{
         		list-style: none;
+        	}
+        	a{
+        		text-decoration: none;
         	}
         	body{
         		background: #f2f2f2;
@@ -47,10 +50,11 @@
         	}
         	#content #right{
         		float: left;
-        		padding:16px 50px;
+        		padding:16px 0 16px 50px;
         		background: #fff;
         		width:290px;
         		height:338px;
+        		position: relative;
         	}
         	#content #list li{
         		float: left;
@@ -61,7 +65,6 @@
         		color:#e54b79;
         		font-weight: 900;
         		border:0;
-        		text-decoration: none;
         	}
         	#content #right p{
         		font-size: 13px;
@@ -69,7 +72,90 @@
         		margin-top:38px;
         		background: #fef3e3;
         	}
-        	#
+        	input{
+        		width:255px;
+        		height:35px;
+        		margin-top: 10px;
+        		font-size: 20px;
+        		border:1px solid #b8c1c8;
+        		box-sizing: border-box;
+        		outline:none;
+        	}
+        	#input1 div{
+        		width: 35px;
+        		height:35px;
+        		background: greenyellow;
+        		float: left;
+        		margin-top:10px;
+        		background: url(img/dl.png) no-repeat;
+        		border:1px solid #b8c1c8;
+        		box-sizing: border-box;
+        	}
+        	#input2 div{
+        		width: 35px;
+        		height:35px;
+        		background: greenyellow;
+        		float: left;
+        		margin-top:10px;
+        		background: url(img/dl.png) no-repeat;
+        		background-position-x:-48px ;
+        		border:1px solid #b8c1c8;
+        		box-sizing: border-box;
+        	}
+        	#check{
+        		position: absolute;
+        		left:200px;
+                margin-top:50px;
+        		width:15px;
+        		height:15px;
+        	}
+        	#forget{
+        		position: absolute;
+        		left:220px;
+        		margin-top:50px;
+        		font-size:13px;
+        	}
+        	#btn{
+        		position: absolute;
+        		top:250px;
+        		width: 290px;
+        		background: #f6342f;
+        		color: #fff;
+        		border: 0;
+        		font-size: 16px;
+        	}
+        	#btn:hover{
+        		opacity:0.9;
+        	}
+        	#link{
+        		position: absolute;
+        		bottom:0;
+        		left:72px;
+        		border-top: 1px solid #f4f4f4;
+        		width: 330px;
+        		padding:15px 0;
+        	}
+        	#link li{
+        		float: left;
+        		width:55px;
+        		height:17px;
+        		line-height:17px;
+        	}
+        	#link img{
+        		width:17px;
+        		height:17px;
+        	}
+        	#link li a{
+        		border-right: 1px solid #d5ccd5;
+        		padding:0 3px;
+        		line-height:14px;
+        		font-size: 10px;
+        	}
+        	#footer{
+        		padding-top:50px;
+        		font-size: 13px;
+        		text-align: center;
+        	}
         </style>
         <script type="text/javascript" src="js/jquery-1.11.0.js">
         	
@@ -95,16 +181,38 @@
 				</ul>
 				<p>公共场所不建议登录，以防账号丢失</p>
 				<div id="input1">
-					<input type="username"id="" value="" />
+					<div></div>
+					<input type="text" id="" value="" />
 				</div>
 				<div id="input2">
-					<input type="password"id="" value="" />
+					<div></div>
+					<input type="password" id="" value="" />
 				</div>
+				<input type="checkbox" id="check" value="" />
+				<div id="forget">
+					自动登录 <a href="">忘记密码</a>
+				</div>
+				<input type="button" id="btn" value="登录" />
+				<ul id="link">
+					<li>
+						<img src="img/qq2.png"/>
+						<a href="">QQ</a>
+					</li>
+					<li>
+						<img src="img/weibo2.png"/>
+						<a href="">微博</a>
+					</li>
+					<li>
+						<img src="img/weixin2.png"/>
+						<a href="">微信</a>
+					</li>
+					<li>
+						<a href="zhuce.html">立即注册</a>
+					</li>
+				</ul>
 			</div>
 		</div>
-		<div id="footer">
-			
-		</div>
+			<p id="footer">Copyright © 2018   中酒网 版权所有</p>
 		<script type="text/javascript">
 			$(function(){
 				$("#input1").animate()
