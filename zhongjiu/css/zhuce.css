@@ -1,0 +1,106 @@
+*{
+				margin: 0;
+				padding: 0;
+			}
+			li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			body{
+				background: #eef3fa;
+			}
+			#header,#content,#footer,#top,#list,#content{
+				width:890px;
+				margin: auto;
+			}
+			#header{
+				background: #f7f7f7;
+			}
+			#header{
+				background: #f7f7f7;
+				height:12px;
+				padding:7px 0;
+				line-height: 12px;
+			}
+			#left{
+				float: left;
+				font-size: 12px;
+			}
+			#right{
+				float: right;
+			}
+			#right li{
+				float: left;
+				font-size: 12px;
+				margin-right: 12px;
+			}
+			#top{
+				height:80px;
+				margin-top:12px;
+				position: relative;
+			}
+			#top a{
+				padding:0 12px;
+			}
+			#top span{
+				position: absolute;
+				left:250px;
+				top:10px;
+				font-size: 26px;
+				font-weight: 900;
+				background: #f1f1f1;
+				padding:3px;
+			}
+			#list{
+				height: 25px;
+			}
+			#list #ppt{
+				float: right;
+				font-size: 12px;
+				margin-right: 20px;
+			}
+			#content{
+				height:536px;
+				background: #fff;
+				padding-top:30px;
+			}
+			#content span{
+				color: red;
+			}
+			input{
+				width:240px;
+				height:30px;
+				font-size: 16px;
+			}
+			p{
+				margin-top:30px;
+				margin-left:83px;
+				width: 700px;
+			}
+			#check input{
+				width:15px;
+				height:15px;
+				margin-left:100px;
+			}
+			#check{
+				font-size: 13px;
+			}
+			#check a{
+				color:red;
+			}
+			#btn{
+				width:238px;
+				height:34px;
+				background: red;
+				color: #fff;
+				border: 0;
+				margin-top:30px;
+				margin-left:180px;
+			}
+			#footer{
+				margin:50px auto;
+                text-align: center;
+                font-size:12px;
+			}
