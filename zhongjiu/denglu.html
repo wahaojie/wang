@@ -8,6 +8,9 @@
         		margin: 0;
         	    padding: 0;
         	}
+        	li{
+        		list-style: none;
+        	}
         	body{
         		background: #f2f2f2;
         	}
@@ -26,20 +29,50 @@
         	#header #init{
         		margin-top:16px;
         		float: left;
-        		border-left: 1px solid #fff;
+        		border-left: 1px solid #cccccc;
         		font-size: 22px;
         		padding:10px;
         	}
         	#content{
-        		height: 370px;
+        		height:370px;
         		background: #fff;
         		margin-top: 60px;
         	}
-        	#content img{
+        	#content #left{
+        		float: left;
+        	}
+        	#content #left img{
         		width:415px;
         		height:370px;
         	}
+        	#content #right{
+        		float: left;
+        		padding:16px 50px;
+        		background: #fff;
+        		width:290px;
+        		height:338px;
+        	}
+        	#content #list li{
+        		float: left;
+        		padding:0 40px;
+        		border-right: 1px solid #cccccc;
+        	}
+        	#content #list li a{
+        		color:#e54b79;
+        		font-weight: 900;
+        		border:0;
+        		text-decoration: none;
+        	}
+        	#content #right p{
+        		font-size: 13px;
+        		border: 1px solid #f6c090;
+        		margin-top:38px;
+        		background: #fef3e3;
+        	}
         </style>
+        <script type="text/javascript" src="js/jquery-1.11.0.js">
+        	
+        </script>
 	</head>
 	<body>
 		<div id="header">
@@ -55,11 +88,26 @@
 				<img src="img/dzlogo.png"/>
 			</div>
 			<div id="right">
-				
+				<ul id="list">
+					<li>扫码登录</li>
+					<li style="border: 0;"><a href="">账户登录</a></li>
+				</ul>
+				<p>公共场所不建议登录，以防账号丢失</p>
+				<div id="input1">
+					<input type="text"id="" value="" />
+				</div>
+				<div id="input2">
+					<input type="text"id="" value="" />
+				</div>
 			</div>
 		</div>
 		<div id="footer">
 			
 		</div>
+		<script type="text/javascript">
+			$(function(){
+				$("#input1").animate()
+			})
+		</script>
 	</body>
 </html>
