@@ -126,24 +126,29 @@
         		bottom:0;
         		left:72px;
         		border-top: 1px solid #f4f4f4;
-        		width: 330px;
+        		width: 380px;
         		padding:15px 0;
         	}
         	#link li{
         		float: left;
-        		width:55px;
+        		width:65px;
         		height:17px;
         		line-height:17px;
+        		
         	}
         	#link img{
         		width:17px;
         		height:17px;
+        		display: block;
+        		float: left;
         	}
         	#link li a{
-        		border-right: 1px solid #d5ccd5;
-        		padding:0 3px;
-        		line-height:14px;
+        		display: block;
+        		line-height:17px;
         		font-size: 10px;
+        		float: left;
+        		border-right: 1px solid #d5ccd5;
+        		padding:0 5px 0 5px;
         	}
         	#footer{
         		padding-top:50px;

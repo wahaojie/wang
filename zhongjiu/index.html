@@ -3,111 +3,97 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<style type="text/css">
-			body,ul,li{
-				padding: 0;
-				margin: 0;
-			}
-			li{
-				list-style: none;
-			}
-			#floorNav{
-				display: none;
-				position: fixed;
-				top: 200px;
-				left: 50px;
-				width: 32px;
-				border: 1px solid #CECECE;
-			}
-			#floorNav li{
-				position: relative;
-				width: 32px;
-				height: 32px;
-				border-bottom: 1px solid #CECECE;
-				text-align: center;
-				line-height: 32px;
-				font-size: 12px;
-			}
-			
-			#floorNav span{
-				display: none;
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 32px;
-				height: 32px;
-				background: red;
-				color: white;
-			}
-			
-			#floorNav li:hover span,#floorNav li.hover span{
-				display: block;
-			}
-			
-			#floorNav li:last-child{
-				background: red;
-				color: white;
-				border-bottom: none;
-			}
-			#header,#footer{
-				width: 1100px;
-				height: 1100px;
-				background: darkgoldenrod;
-				margin: 0 auto;
-			}
-			#content{
-				
-			}
-			#content li{
-				width:1000px;
-				height: 600px;
-				margin: 0 auto;
-				font-size: 40px;
-				text-align: center;
-				line-height: 600px;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
 	</head>
 
 	<body>
 		<div id="floorNav">
 			<ul>
-				<li>1F<span>服饰</span></li>
-				<li>2F<span>美妆</span></li>
-				<li>3F<span>手机</span></li>
-				<li>4F<span>家电</span></li>
-				<li>5F<span>数码</span></li>
-				<li>6F<span>运动</span></li>
-				<li>7F<span>居家</span></li>
-				<li>8F<span>母婴</span></li>
-				<li>9F<span>食品</span></li>
-				<li>10F<span>图书</span></li>
-				<li>11F<span>服务</span></li>
+				<li>1F<span>帮您</span></li>
+				<li>2F<span>白酒</span></li>
+				<li>3F<span>葡萄</span></li>
+				<li>4F<span>洋酒</span></li>
 				<li>TOP</li>
 			</ul>
 		</div>
-		<div id="header"></div>
-		<div id="content">
-			<ul>
-				<li style="background: #8B0000;"></li>
-				<li style="background: #123;"></li>
-				<li style="background: #667;"></li>
-				<li style="background: #558;"></li>
-				<li style="background: #900;"></li>
-				<li style="background: #456;"></li>
-				<li style="background: #789;"></li>
-				<li style="background: #234;"></li>
-				<li style="background: #567;"></li>
-				<li style="background: #887;"></li>
-				<li style="background: #980;"></li>
+		<div id="header">
+			<ul id="header_left">
+				<li>您好，欢迎来到 中酒网！</li>
+				<li><a style="color:red" href="">去买家中心</a></li>
+				<li><a href="">请登录</a></li>
+				<li><a href="">免费注册</a></li>
+			</ul>
+			<ul id="header_right">
+				<li><a href="">我的中酒网</a></li>
+				<li><a href="">购物车0件</a></li>
+				<li><a href="">微信端</a></li>
+				<li><a href="">app</a></li>
+				<li><a href="">卖家中心</a></li>
+				<li><a href="">订购热线：400-798-9999</a></li>
 			</ul>
 		</div>
-		<div id="footer"></div>
+		<div id="top">
+			<div id="logo">
+				<a href=""><img src="img/logo.png"/></a>
+			</div>
+			<div id="gif">
+				<a href=""><img src="img/gif.gif"/></a>
+			</div>
+			
+			<div id="search">
+				<div id="search_form">
+					<label>
+						商品
+					</label>
+					<input type="text" id="" value="" />
+				</div>
+				<input type="button" id="btn" value="搜索" />
+				<ul>
+					<li><a href="">酒品</a></li>
+					<li><a href="">酒品</a></li>
+					<li><a href="">酒品</a></li>
+					<li><a href="">酒品</a></li>
+					<li><a href="">酒品</a></li>
+					<li><a href="">酒品</a></li>
+					<li><a href="">酒品</a></li>
+					<li><a href="">酒品</a></li>
+					<li><a href="">酒品</a></li>
+					<li><a href="">酒品</a></li>
+				</ul>
+			</div>
+			<div id="image">
+				<a href=""><img src="img/201802011650389711990.jpg"/></a>
+			</div>
+		</div>
+		<div id="nav"></div>
+		<div id="banner"></div>
+		<div id="content">
+				<div style="background: #8B0000;"></div>
+				<div style="background: #123;"></div>
+				<div style="background: #667;"></div>
+				<div style="background: #558;"></div>
+				<div style="background: #980;"></div>
+		</div>
+		<div id="footer1">
+		      <dl>
+		      	<dt></dt>
+		      	<dd></dd>
+		      </dl>
+		</div>
+		<div id="footer2">
+			
+		</div>
+		<div id="footer3">
+			
+		</div>
+		<div id="footer4">
+			
+		</div>
 		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function(){
 				var $navLi = $("#floorNav li");
-				var $conLi = $("#content li");
+				var $condiv = $("#content div");
 				var flag = true;
 				
 				$(window).scroll(function(){
@@ -120,7 +106,7 @@
 							$("#floorNav").fadeOut();
 						}
 						
-						$conLi.each(function(index){
+						$condiv.each(function(index){
 							if(scrollTop > $(this).offset().top - $(this).outerHeight()/2){
 								$navLi.eq(index).addClass("hover").siblings().removeClass("hover");
 							}
@@ -134,7 +120,7 @@
 					flag = false;
 					var index = $(this).index();
 					$(this).addClass("hover").siblings().removeClass("hover");
-					$("body,html").animate({"scrollTop":$conLi.eq(index).offset().top},function(){
+					$("body,html").animate({"scrollTop":$condiv.eq(index).offset().top},function(){
 						flag = true;
 					});
 					

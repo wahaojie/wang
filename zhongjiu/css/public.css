@@ -1,0 +1,161 @@
+body,ul,li{
+				padding: 0;
+				margin: 0;
+			}
+			li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			#floorNav{
+				display: none;
+				position: fixed;
+				top: 300px;
+				left: 50px;
+				width: 32px;
+				border: 1px solid #CECECE;
+			}
+			#floorNav li{
+				position: relative;
+				width: 32px;
+				height: 32px;
+				border-bottom: 1px solid #CECECE;
+				text-align: center;
+				line-height: 32px;
+				font-size: 12px;
+			}
+			
+			#floorNav span{
+				display: none;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 32px;
+				height: 32px;
+				background: red;
+				color: white;
+			}
+			
+			#floorNav li:hover span,#floorNav li.hover span{
+				display: block;
+			}
+			
+			#floorNav li:last-child{
+				background: red;
+				color: white;
+				border-bottom: none;
+			}
+			#header,#top,#nav,#banner,#footer1,#footer2,
+			#footer3,#footer4{
+				width: 1190px;
+				margin: 0 auto;
+			}
+			#header{
+				height: 30px;
+				background: #f5f4f4;
+			}
+			#header li{
+				float: left;
+				font-size:13px;
+				line-height: 30px;
+			}
+			#header_left li{
+				padding-right:20px;
+				float: left;
+			}
+			#header_right{
+				float: right;
+			}
+			#header_right li{
+				margin-right: 10px;
+			}
+			#top{
+				height: 66px;
+				margin-top: 24px;
+				position: relative;
+			}
+			#top #logo{
+				position: absolute;
+				left:10px;
+			}
+			#top #gif{
+				position: absolute;
+				left:210px;
+			}
+			#top #search{
+				width:540px;
+				height:60px;
+				background: #fff;
+				position: relative;
+				left:350px;
+			}
+			#search_form{
+				width:540px;
+				height: 33px;
+				border: 2px solid red;
+				padding:2px 0;
+			}
+			#search_form label{
+				position: absolute;
+				left:0;
+				width:55px;
+				text-indent: 12px;
+				font-size: 12px;
+				line-height:36px;
+				cursor: pointer;
+				border-right: 1px solid #ddd;
+			}
+			#search_form input{
+				position: absolute;
+				left: 60px;
+				width:416px;
+				height:30px;
+				border: 0;
+				outline:none;
+				font-size:16px;
+			}
+			#search #btn{
+				position: absolute;
+				left:470px;
+				top:0;
+				width: 75px;
+				height: 40px;
+				background: red;
+				color: #fff;
+				border: 0;
+			}
+			#top #image{
+				position: absolute;
+				right: 0;
+				top:-10px;
+			}
+			#top li{
+				float: left;
+				margin-right:10px;
+			}
+			#content div{
+				width:1190px;
+				height: 670px;
+				margin: 0 auto;
+				font-size: 40px;
+				text-align: center;
+				line-height: 600px;
+			}
+			#footer1{
+				height: 100px;
+				background: #f8f8f8;
+			}
+			
+			#footer2{
+				height: 230px;
+				background: #f3f3f3;
+			}
+            #footer3{
+            	height: 35px;
+            	background: #313131;
+            }
+            #footer4{
+            	height: 105px;
+            	background: #fff;
+            }
