@@ -1,4 +1,4 @@
-body,ul,li{
+body,ul,li,dl,dt,dd,p{
 				padding: 0;
 				margin: 0;
 			}
@@ -47,7 +47,7 @@ body,ul,li{
 				border-bottom: none;
 			}
 			#header,#top,#nav,#banner,#footer1,#footer2,
-			#footer3,#footer4{
+			#footer3{
 				width: 1190px;
 				margin: 0 auto;
 			}
@@ -69,6 +69,9 @@ body,ul,li{
 			}
 			#header_right li{
 				margin-right: 10px;
+			}
+			#header_right li ul li{
+				float: none;
 			}
 			#top{
 				height: 66px;
@@ -143,19 +146,99 @@ body,ul,li{
 				line-height: 600px;
 			}
 			#footer1{
-				height: 100px;
+				height:130px;
 				background: #f8f8f8;
 			}
-			
+			#footer1 h3{
+				font-size:14px;
+				font-weight: 100;
+			}
+			#footer1 p{
+				font-size:10px;
+			}
+			#footer1 dl{
+				float: left;
+				width: 180px;
+				height:40px;
+				padding:30px 0;
+				margin-right: 15px;
+			}
+			#footer1 dt{
+				width:50px;
+				height:50px;
+				float: left;
+				margin-top:15px;
+			}
+			#footer1 dd{
+				float: left;
+				width: 125px;
+			}
+			#footer1 #list1{
+				background:url(../img/footter.png) no-repeat;
+				background-position-y:-38px;
+			}
+			#footer1 #list2{
+				background:url(../img/footter.png) no-repeat;
+				background-position:-56px -38px;
+			}
+			#footer1 #list3{
+				background:url(../img/footter.png) no-repeat;
+				background-position:-125px -38px;
+			}
+			#footer1 #list4{
+				background:url(../img/footter.png) no-repeat;
+				background-position:-180px -38px;
+			}
+			#footer1 #list5{
+				background:url(../img/footter.png) no-repeat;
+				background-position:-240px -38px;
+			}
+			#footer1 #list6{
+				background:url(../img/footter.png) no-repeat;
+				background-position:-300px -38px;
+			}
 			#footer2{
-				height: 230px;
+				height:230px;
 				background: #f3f3f3;
 			}
+			#footer2 ul{
+				padding-top:38px;
+				float: left;
+			}
+			#footer2 li{
+				margin-bottom:15px;
+			}
+			#footer2 dl{
+				float:left;
+				margin:38px 40px;
+				text-align: center;
+			}
+			#footer2 dd img{
+				width:76px;
+				height:76px;
+			}
+			#footer2 dd{
+				font-size: 12px;
+			} 
             #footer3{
             	height: 35px;
             	background: #313131;
+            	text-align: center;
+            	line-height: 35px;
+            }
+            #footer3 p{
+            	color: #fff;
+            }
+            #footer3 a{
+            	color: #fff;
+            	margin:0 5px;
             }
             #footer4{
             	height: 105px;
             	background: #fff;
+            	text-align: center;
+            	font-size: 10px;
+            }
+            #footer4 p{
+            	margin-top:10px;
             }
