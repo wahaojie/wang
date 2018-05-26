@@ -92,14 +92,14 @@
 		<div id="carousel">
 			<div id="box">
 				<ul class="content">
-					<li class="list"><img src="img/banner1.jpg"</li>
-					<li class="list"><img src="img/banner2.jpg"</li>
-					<li class="list"><img src="img/banner3.jpg"</li>
-					<li class="list"><img src="img/banner4.jpg"</li>
-					<li class="list"><img src="img/banner5.jpg"</li>
-					<li class="list"><img src="img/banner6.jpg"</li>
-					<li class="list"><img src="img/banner7.jpg"</li>
-					<li class="list"><img src="img/banner8.jpg"</li>
+					<li class="list" style="background: url(img/banner1.jpg) no-repeat center;"></li>
+					<li class="list" style="background: url(img/banner2.jpg) no-repeat center;"></li>
+					<li class="list" style="background: url(img/banner3.jpg) no-repeat center;"></li>
+					<li class="list" style="background: url(img/banner4.jpg) no-repeat center;"></li>
+					<li class="list" style="background: url(img/banner5.jpg) no-repeat center;"></li>
+					<li class="list" style="background: url(img/banner6.jpg) no-repeat center;"></li>
+					<li class="list" style="background: url(img/banner7.jpg) no-repeat center;"></li>
+					<li class="list" style="background: url(img/banner8.jpg) no-repeat center;"></li>
 				</ul>
 				<ul class="nums">
 					<li class="num bg"></li>
@@ -114,13 +114,49 @@
 			</div>
 		</div>
 		<div id="content">
-				<div style="background: #8B0000;">
-					
-				</div>
-				<div style="background: #123;"></div>
-				<div style="background: #667;"></div>
-				<div style="background: #558;"></div>
-				<div style="background: #980;"></div>
+				<div class="main1" id="main">
+				<dl class="main1-top">
+					<dt><a href="">热销爆款</a></dt>
+					<dd><a href="#">更多&gt;&gt;</a></dd>
+				</dl>
+				<ul class="main1-content">
+					<li>
+						<a href=""><img src="img/1_220(1).png"></a>
+					</li>
+					<li>
+						<a href=""><img src="img/1_220(2).png"></a>
+					</li>
+					<li>
+						<a href=""><img src="img/1_220(3).png"></a>
+					</li>
+					<li>
+						<a href=""><img src="img/1_220(4).png"></a>
+					</li>
+					<li>
+						<a href=""><img src="img/1_220(5).png"></a>
+					</li>
+					<li>
+						<a href=""><img src="img/1_220(6).png"></a>
+					</li>
+					<li>
+						<a href=""><img src="img/1_220(7).png"></a>
+					</li>
+					<li>
+						<a href=""><img src="img/1_220(8).png"></a>
+					</li>
+					<li>
+						<a href=""><img src="img/1_220(9).png"></a>
+					</li>
+					<li>
+						<a href=""><img src="img/1_220.png"></a>
+					</li>
+				</ul>
+			</div>
+				
+				<div id="main" style="background: #667;"></div>
+				<div id="main" style="background: #558;"></div>
+				<div id="main" style="background: #980;"></div>
+				<div id="main" style="background: #970;"></div>
 		</div>
 		<div id="footer1_wrap">
 		<div id="footer1">
@@ -246,7 +282,7 @@
 		<script type="text/javascript">
 			$(function(){
 				var $navLi = $("#floorNav li");
-				var $condiv = $("#content div");
+				var $condiv = $("#content #main");
 				var flag = true;
 				
 				$(window).scroll(function(){
@@ -260,7 +296,7 @@
 						}
 						
 						$condiv.each(function(index){
-							if(scrollTop > $(this).offset().top - $(this).outerHeight()/2){
+							if(scrollTop > $(this).offset().top + 300){
 								$navLi.eq(index).addClass("hover").siblings().removeClass("hover");
 							}
 						})

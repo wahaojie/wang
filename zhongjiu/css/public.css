@@ -147,12 +147,9 @@ body,ul,li,dl,dt,dd,p{
 				margin-right:10px;
 			}
 			#content div{
+				height:600px;
 				width:1190px;
-				height: 670px;
 				margin: 0 auto;
-				font-size: 40px;
-				text-align: center;
-				line-height: 600px;
 			}
 			#footer1{
 				height:130px;
