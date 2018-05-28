@@ -38,3 +38,9 @@ function Ajax(url,fn){
 			oli[i].appendChild(odiv);
           }
 	}
+//$(function(){
+//		$(".main2-center").css("visibility","hidden");
+//		$(".main2-right").css("visibility","hidden");
+//	})
+	
+
