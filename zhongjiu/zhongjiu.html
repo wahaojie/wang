@@ -3,11 +3,17 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		
 		<link rel="stylesheet" type="text/css" href="css/public.css"/>
 		<link rel="stylesheet" type="text/css" href="css/zhongjiu.css"/>
 		<script type="text/javascript" src="js/jquery-1.11.0.js">
 		</script>
 		<script type="text/javascript" src="js/lunbo.js">
+		</script>
+		<script type="text/javascript" src="js/nav1.js">		
+		</script>
+		<script type="text/javascript" src="js/zhongjiu.js">
+			
 		</script>
 	</head>
 	<body>
@@ -22,14 +28,20 @@
 		</div>
 		<div id="header_wrap">
 		<div id="header">
-			<ul id="header_left">
+			<ul id="header_left" id="nav1">
 				<li>您好，欢迎来到 中酒网！</li>
 				<li><a style="color:red" href="">去买家中心</a></li>
 				<li><a href="">请登录</a></li>
 				<li><a href="">免费注册</a></li>
 			</ul>
 			<ul id="header_right">
-				<li><a href="">我的中酒网</a></li>
+				<li><a href="">我的中酒网</a>
+					<ul>
+						<li>已买到的商品</li>
+						<li>我关注的商品</li>
+						<li>我关注的店铺</li>
+					</ul>
+				</li>
 				<li><a href="">购物车0件</a></li>
 				<li><a href="">微信端</a></li>
 				<li><a href="">app</a></li>
@@ -55,7 +67,7 @@
 					<input type="text" id="" value="" />
 				</div>
 				<input type="button" id="btn" value="搜索" />
-				<ul>
+				<ul style="font-size: 12px;">
 					<li><a href="">西凤</a></li>
 					<li><a href="">青稞酒</a></li>
 					<li><a href="">洋河</a></li>
@@ -79,8 +91,54 @@
 						<img src="img/nav.png"/>
 						全部商品分类
 					</a>
-					<ul>
-						<li><a href=""></a></li>
+					<ul id="nav2">
+						<li>
+							<p><a href="">白酒</a></p>
+							<span>
+								<a href="">茅台</a>
+								<a href="">五粮液</a>
+								<a href="">天佑德</a>
+							</span>
+						</li>
+						<li>
+							<p><a href="">葡萄酒</a></p>
+							<span>
+								<a href="">拉菲</a>
+								<a href="">张裕</a>
+								<a href="">马克斯威</a>
+							</span>
+						</li>
+						<li>
+							<p><a href="">洋酒</a></p>
+							<span>
+								<a href="">马爹利</a>
+								<a href="">人头马</a>
+								<a href="">芝华士</a>
+							</span>
+						</li>
+						<li>
+							<p><a href="">黄酒</a></p>
+							<span>
+								<a href="">尧喝货</a>
+								<a href="">唐宋</a>
+								<a href="">塔牌</a>
+							</span>
+						</li>
+						<li>
+							<p><a href="">礼盒专区</a></p>
+							<span>
+								<a href="">五粮液五星级</a>
+							</span>
+						</li>
+						<li>
+							<p><a href="">婚庆专区</a></p>
+							<span>
+								<a href="">茅台</a>
+								<a href="">拉菲</a>
+								<a href="">五粮液</a>
+								<a href="">张裕</a>
+							</span>
+						</li>
 					</ul>
 				</li>
 				<li><a href="">首页</a></li>
@@ -139,7 +197,7 @@
 						<a href=""><img src="img/1_220(6).png"></a>
 					</li>
 					<li>
-						<a href=""><img src="img/1_220(7).png"></a>
+						<a href=""><img src="img/1_220.png"></a>
 					</li>
 					<li>
 						<a href=""><img src="img/1_220(8).png"></a>
@@ -148,17 +206,122 @@
 						<a href=""><img src="img/1_220(9).png"></a>
 					</li>
 					<li>
-						<a href=""><img src="img/1_220.png"></a>
+						<a href=""><img src="img/1_220(7).png"></a>
 					</li>
 				</ul>
 			</div>
 				
 				<div id="main" class="main2">
+					<div class="main2-top">
+					<h2><a href="#">帮您选酒</a></h2>
+					<ul>
+						<li class="active2">Hot！热卖</li>
+						<li>必备口粮</li>
+						<li>送礼佳品</li>
+						<li>大型宴请</li>
+						<a href="#">更多&gt;&gt;</a>
+					</ul>
 					
 				</div>
-				<div id="main" style="background: #558;"></div>
-				<div id="main" style="background: #980;"></div>
-				<div id="main" style="background: #970;"></div>
+				<div class="main2-left">
+				    <a href=""><img src="img/floor_RSeven_20170823170519683978.jpg"/></a>	
+				</div>
+				<div class="main2-center">
+				   	<a href=""><img src="img/floor_RTwo_20180410104724982806.jpg"/></a>
+				   	<a href=""><img src="img/floor_REight_20170823170519683978.jpg"/></a>
+				</div>
+				<ul class="main2-right">
+					<li><a href=""><img src="img/floor_RSeven_20170823170812828682.jpg"/></a></li>
+					<li><a href=""><img src="img/floor_RSix_20170823170945087244.jpg"/></a></li>
+					<li><a href=""><img src="img/floor_RFive_20170823170646607330.jpg"/></a></li>
+					<li><a href=""><img src="img/floor_RSix_20170823170646638531.jpg"/></a></li>
+					<li><a href=""><img src="img/floor_RThree_20170823170519637178.jpg"/></a></li>
+					<li><a href=""><img src="img/floor_RThree_20170823170945071644.jpg"/></a></li>
+				</ul>
+			</div>
+				<div id="main" class="main3">
+					<div class="main3-top">
+					<h2><a href="#">白酒馆</a></h2>
+					<ul>
+						<li class="active2">Hot！热卖</li>
+						<li>洋河</li>
+						<li>天佑德</li>
+						<a href="#">更多&gt;&gt;</a>
+					</ul>
+					
+				    </div>
+				<div class="main3-left">
+				    <a href=""><img src="img/floor_RSeven_20170811161129655844.jpg"/></a>	
+				</div>
+				<div class="main3-center">
+				   	<a href=""><img src="img/floor_RTwo_20180410173137937802.jpg"/></a>
+				   	<a href=""><img src="img/floor_REight_20170823170646654131.jpg"/></a>
+				</div>
+				<ul class="main3-right">
+					<li><a href=""><img src="img/floor_RFive_20170823170519652778.jpg"/></a></li>
+					<li><a href=""><img src="img/floor_RFive_20170823170646607330.jpg"/></a></li>
+					<li><a href=""><img src="img/floor_RFour_20170906134313574430.jpg"/></a></li>
+					<li><a href=""><img src="img/floor_RSix_20170823170646638531.jpg"/></a></li>
+					<li><a href=""><img src="img/floor_ScrollOne_20170823170646669731.jpg"/></a></li>
+					<li><a href=""><img src="img/floor_RThree_20170823170646576130.jpg"/></a></li>
+				</ul>
+				</div>
+				<div id="main" class="main4">
+					<div class="main4-top">
+					<h2><a href="#">葡萄酒馆</a></h2>
+					<ul>
+						<li class="active2">Hot！热卖</li>
+						<li>马克斯威</li>
+						<li>干红葡萄酒</li>
+						<li>起泡酒</li>
+						<li>拉菲</li>
+						<a href="#">更多&gt;&gt;</a>
+					</ul>
+					
+				    </div>
+				<div class="main4-left">
+				    <a href=""><img src="img/floor_RSeven_20170811161129655844.jpg"/></a>	
+				</div>
+				<div class="main4-center">
+				   	<a href=""><img src="img/floor_RTwo_20170531092958651200.jpg"/></a>
+				   	<a href=""><img src="img/floor_REight_20170922171302056780.jpg"/></a>
+				</div>
+				<ul class="main4-right">
+					<li><a href=""><img src="img/floor_RFive_20170823170812797482.jpg"/></a></li>
+					<li><a href=""><img src="img/floor_RFour_20170823170812781882.jpg"/></a></li>
+					<li><a href=""><img src="img/floor_RSeven_20170823170812828682.jpg"/></a></li>
+					<li><a href=""><img src="img/floor_RSix_20170823170519668378.jpg"/></a></li>
+					<li><a href=""><img src="img/floor_RSix_20170823170812813082.jpg"/></a></li>
+					<li><a href=""><img src="img/floor_ScrollOne_20170823170812828682.jpg"/></a></li>
+				</ul>
+				</div>
+				<div id="main" class="main5">
+					<div class="main5-top">
+					<h2><a href="#">洋酒&啤酒馆</a></h2>
+					<ul>
+						<li class="active2">Hot！热卖</li>
+						<li>伏特加</li>
+						<li>威士忌</li>
+						<a href="#">更多&gt;&gt;</a>
+					</ul>
+					
+				    </div>
+				<div class="main5-left">
+				    <a href=""><img src="img/floor_RSeven_20170823170945102844.jpg"/></a>	
+				</div>
+				<div class="main5-center">
+				   	<a href=""><img src="img/floor_RTwo_20170531093011614822.jpg"/></a>
+				   	<a href=""><img src="img/floor_REight_20170823170945102844.jpg"/></a>
+				</div>
+				<ul class="main5-right">
+					<li><a href=""><img src="img/floor_RFive_20170823170945087244.jpg"/></a></li>
+					<li><a href=""><img src="img/floor_RFour_20170823170945087244.jpg"/></a></li>
+					<li><a href=""><img src="img/floor_RSix_20170823170945087244.jpg"/></a></li>
+					<li><a href=""><img src="img/floor_RThree_20170823170945071644.jpg"/></a></li>
+					<li><a href=""><img src="img/floor_ScrollOne_20170823170945118444.jpg"/></a></li>
+					<li><a href=""><img src="img/floor_ScrollTwo_20170823170945118444.jpg"/></a></li>
+				</ul>
+				</div>
 		</div>
 		<div id="footer1_wrap">
 		<div id="footer1">
@@ -215,40 +378,45 @@
 			</ul>
 			<dl>
 				<dt>购物指南</dt>
-				<dd><a href="">购物指南</a></dd>
-				<dd><a href="">购物指南</a></dd>
-				<dd><a href="">购物指南</a></dd>
+				<dd><a href="">购物流程</a></dd>
+				<dd><a href="">用户注册协议</a></dd>
+				<dd><a href="">会员积分</a></dd>
+				<dd><a href="">关于发票</a></dd>
+				<dd><a href="">关于优惠券</a></dd>
+				<dd><a href="">开票说明</a></dd>
 			</dl>
 			<dl>
-				<dt>购物指南</dt>
-				<dd><a href="">购物指南</a></dd>
-				<dd><a href="">购物指南</a></dd>
-				<dd><a href="">购物指南</a></dd>
+				<dt>配送说明</dt>
+				<dd><a href="">关于运费</a></dd>
+				<dd><a href="">快递查询</a></dd>
+				<dd><a href="">发货与签收</a></dd>
 			</dl>
 			<dl>
-				<dt>购物指南</dt>
-				<dd><a href="">购物指南</a></dd>
-				<dd><a href="">购物指南</a></dd>
-				<dd><a href="">购物指南</a></dd>
+		        <dt>支付方式</dt>
+				<dd><a href="">支付宝支付</a></dd>
+				<dd><a href="">微信支付</a></dd>
+				<dd><a href="">账户余额支付</a></dd>
 			</dl>
 			<dl>
-				<dt>购物指南</dt>
-				<dd><a href="">购物指南</a></dd>
-				<dd><a href="">购物指南</a></dd>
-				<dd><a href="">购物指南</a></dd>
+                <dt>售后服务</dt>
+				<dd><a href="">热门常见问题</a></dd>
+				<dd><a href="">服务承诺</a></dd>
+				<dd><a href="">退款说明</a></dd>
+				<dd><a href="">退换货政策</a></dd>
+				<dd><a href="">退换货流程</a></dd>
 			</dl>
 			<dl>
-				<dt>购物指南</dt>
-				<dd><a href="">购物指南</a></dd>
-				<dd><a href="">购物指南</a></dd>
-				<dd><a href="">购物指南</a></dd>
+        		<dt>服务保障</dt>
+				<dd><a href="">30分钟快速响应</a></dd>
+				<dd><a href="">7*12小时贴心服务</a></dd>
 			</dl>
-			<dl>
+			
+			<dl style="text-align: center;">
 				<dt>手机中酒</dt>
 				<dd><img src="img/mob.jpg"/></dd>
 				<dd>下载移动客户端</dd>
 			</dl>
-			<dl>
+			<dl style="text-align: center;">
 				<dt>中酒微信</dt>
 				<dd><img src="img/qrCode.png"/></dd>
 				<dd>中酒官方微信</dd>
@@ -259,11 +427,11 @@
 		<div id="footer3">
 			<p>
 				<a href="">关于中酒</a><span>|</span>
-				<a href="">关于中酒</a><span>|</span>
-				<a href="">关于中酒</a><span>|</span>
-				<a href="">关于中酒</a><span>|</span>
-				<a href="">关于中酒</a><span>|</span>
-				<a href="">关于中酒</a>
+				<a href="">媒体报道</a><span>|</span>
+				<a href="">商务合作</a><span>|</span>
+				<a href="">加入中酒</a><span>|</span>
+				<a href="">商家加盟</a><span>|</span>
+				<a href="">联系我们</a>
 			</p>
 		</div>
 		</div>

@@ -3,9 +3,15 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<style type="text/css">
+			#footer1 dt{
+				margin-top:15px;
+			}
+		</style>
 		<link rel="stylesheet" type="text/css" href="css/public.css"/>
 	</head>
 	<body>
+		<div id="header_wrap">
 		<div id="header">
 			<ul id="header_left">
 				<li>您好，欢迎来到 中酒网！</li>
@@ -14,19 +20,14 @@
 				<li><a href="">免费注册</a></li>
 			</ul>
 			<ul id="header_right">
-				<li><a href="">我的中酒网</a>
-					<ul>
-						<li><a href="">已买到的商品</a></li>
-						<li><a href="">已买到的商品</a></li>
-						<li><a href="">已买到的商品</a></li>
-					</ul>
-				</li>
+				<li><a href="">我的中酒网</a></li>
 				<li><a href="">购物车0件</a></li>
 				<li><a href="">微信端</a></li>
 				<li><a href="">app</a></li>
 				<li><a href="">卖家中心</a></li>
 				<li><a href="">订购热线：400-798-9999</a></li>
 			</ul>
+		</div>
 		</div>
 		<div id="top">
 			<div id="logo">
@@ -35,40 +36,54 @@
 			<div id="gif">
 				<a href=""><img src="img/gif.gif"/></a>
 			</div>
+			
 			<div id="search">
 				<div id="search_form">
-					<label>
-						商品
-					</label>
+					<select>
+						<option>商品</option>
+						<option>店铺</option>
+					</select>
 					<input type="text" id="" value="" />
 				</div>
 				<input type="button" id="btn" value="搜索" />
-				<ul>
-					<li><a href="">酒品</a></li>
-					<li><a href="">酒品</a></li>
-					<li><a href="">酒品</a></li>
-					<li><a href="">酒品</a></li>
-					<li><a href="">酒品</a></li>
-					<li><a href="">酒品</a></li>
-					<li><a href="">酒品</a></li>
-					<li><a href="">酒品</a></li>
-					<li><a href="">酒品</a></li>
-					<li><a href="">酒品</a></li>
+				<ul style="font-size: 12px;">
+					<li><a href="">西凤</a></li>
+					<li><a href="">青稞酒</a></li>
+					<li><a href="">洋河</a></li>
+					<li><a href="">习酒</a></li>
+					<li><a href="">小糊涂仙</a></li>
+					<li><a href="">酒鬼酒</a></li>
+					<li><a href="">张裕</a></li>
+					<li><a href="">拉菲</a></li>
+					<li><a href="">董酒</a></li>
+					<li><a href="">华夏长城</a></li>
 				</ul>
 			</div>
 			<div id="image">
 				<a href=""><img src="img/201802011650389711990.jpg"/></a>
 			</div>
 		</div>
-		<!--<div id="nav"></div>
-		<div id="banner"></div>-->
-		<div id="content">
-				<div style="background: #8B0000;"></div>
-				<!--<div style="background: #123;"></div>
-				<div style="background: #667;"></div>
-				<div style="background: #558;"></div>
-				<div style="background: #980;"></div>-->
+		<div id="nav">
+			<ul>
+				<li style="background: #dd0207;">
+					<a href="" style="color: #fff;">
+						<img src="img/nav.png"/>
+						全部商品分类
+					</a>
+					
+				</li>
+				<li><a href="">首页</a></li>
+				<li><a href="">白酒专区</a></li>
+				<li><a href="">红洋酒专区</a></li>
+				<li><a href="">天佑德青稞酒</a></li>
+			</ul>
 		</div>
+		<div id="content">
+			<div id="main">
+				
+			</div>
+		</div>
+		<div id="footer1_wrap">
 		<div id="footer1">
 		      <dl>
 		      	<dt id="list1"></dt>
@@ -113,6 +128,8 @@
 		      	</dd>
 		      </dl>
 		</div>
+		</div>
+		<div id="footer2_wrap">
 		<div id="footer2">
 			<ul>
 				<li><a href=""><img src="img/zj.png"/></a></li>
@@ -121,54 +138,62 @@
 			</ul>
 			<dl>
 				<dt>购物指南</dt>
-				<dd><a href="">购物指南</a></dd>
-				<dd><a href="">购物指南</a></dd>
-				<dd><a href="">购物指南</a></dd>
+				<dd><a href="">购物流程</a></dd>
+				<dd><a href="">用户注册协议</a></dd>
+				<dd><a href="">会员积分</a></dd>
+				<dd><a href="">关于发票</a></dd>
+				<dd><a href="">关于优惠券</a></dd>
+				<dd><a href="">开票说明</a></dd>
 			</dl>
 			<dl>
-				<dt>购物指南</dt>
-				<dd><a href="">购物指南</a></dd>
-				<dd><a href="">购物指南</a></dd>
-				<dd><a href="">购物指南</a></dd>
+				<dt>配送说明</dt>
+				<dd><a href="">关于运费</a></dd>
+				<dd><a href="">快递查询</a></dd>
+				<dd><a href="">发货与签收</a></dd>
 			</dl>
 			<dl>
-				<dt>购物指南</dt>
-				<dd><a href="">购物指南</a></dd>
-				<dd><a href="">购物指南</a></dd>
-				<dd><a href="">购物指南</a></dd>
+		        <dt>支付方式</dt>
+				<dd><a href="">支付宝支付</a></dd>
+				<dd><a href="">微信支付</a></dd>
+				<dd><a href="">账户余额支付</a></dd>
 			</dl>
 			<dl>
-				<dt>购物指南</dt>
-				<dd><a href="">购物指南</a></dd>
-				<dd><a href="">购物指南</a></dd>
-				<dd><a href="">购物指南</a></dd>
+                <dt>售后服务</dt>
+				<dd><a href="">热门常见问题</a></dd>
+				<dd><a href="">服务承诺</a></dd>
+				<dd><a href="">退款说明</a></dd>
+				<dd><a href="">退换货政策</a></dd>
+				<dd><a href="">退换货流程</a></dd>
 			</dl>
 			<dl>
-				<dt>购物指南</dt>
-				<dd><a href="">购物指南</a></dd>
-				<dd><a href="">购物指南</a></dd>
-				<dd><a href="">购物指南</a></dd>
+        		<dt>服务保障</dt>
+				<dd><a href="">30分钟快速响应</a></dd>
+				<dd><a href="">7*12小时贴心服务</a></dd>
 			</dl>
-			<dl>
+			
+			<dl style="text-align: center;">
 				<dt>手机中酒</dt>
 				<dd><img src="img/mob.jpg"/></dd>
 				<dd>下载移动客户端</dd>
 			</dl>
-			<dl>
+			<dl style="text-align: center;">
 				<dt>中酒微信</dt>
 				<dd><img src="img/qrCode.png"/></dd>
 				<dd>中酒官方微信</dd>
 			</dl>
 		</div>
+		</div>
+		<div id="footer3_wrap">
 		<div id="footer3">
 			<p>
 				<a href="">关于中酒</a><span>|</span>
-				<a href="">关于中酒</a><span>|</span>
-				<a href="">关于中酒</a><span>|</span>
-				<a href="">关于中酒</a><span>|</span>
-				<a href="">关于中酒</a><span>|</span>
-				<a href="">关于中酒</a>
+				<a href="">媒体报道</a><span>|</span>
+				<a href="">商务合作</a><span>|</span>
+				<a href="">加入中酒</a><span>|</span>
+				<a href="">商家加盟</a><span>|</span>
+				<a href="">联系我们</a>
 			</p>
+		</div>
 		</div>
 		<div id="footer4">
 			<p>
