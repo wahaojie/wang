@@ -118,6 +118,8 @@ body,ul,li,dl,dt,dd,p{
 				outline: none;
 				border: 0;
 				text-indent:3px;
+				 border-width: 0px;
+  
 			}
 			#search_form input{
 				position: absolute;
