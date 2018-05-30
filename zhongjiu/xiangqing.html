@@ -92,7 +92,7 @@
 					<div class="minbox"></div>
 				</div>
 				<div id="bigbox">
-					<img src="img/1_350(84).png">
+					<img src="img/1_350.png">
 				</div>
 				<div id="de-c">
 					<h2>52° 五粮液股份有限公司 五星级 500ml（两瓶装
@@ -297,10 +297,79 @@
             }
 
         }
+        //放大镜
+		var detail=document.getElementById("detail");
+		var smallbox=document.getElementById("smallbox");
+		var smallimg=smallbox.children[0];
+		var minbox=document.getElementsByClassName("minbox")[0];
+		var bigbox=document.getElementById("bigbox");
+		var bigimg=bigbox.children[0];
+		var oimg=bigbox.children[0];
+		
+		var oli=detail.getElementsByTagName("li");
+		oli[0].style.border="2px solid red";
+		for(let i=0;i<oli.length;i++){
+			oli[i].onmouseenter=function(){
+				for(var j=0;j<oli.length;j++){
+					oli[j].style.border="";
+				}
+				oli[i].style.border="2px solid red"
+				var od=document.createElement("div");
+				od.className="minbox";
+				//console.log(oli[i].innerHTML);
+				var asd=toString(oli[i].innerHTML)
+				smallbox.innerHTML=oli[i].innerHTML;
+				smallbox.appendChild(od);
+				bigbox.innerHTML=oli[i].innerHTML;
+			}
+		}
+		
+		var detail=document.getElementById("detail");
+		var smallbox=document.getElementById("smallbox");
+		var smallimg=smallbox.children[0];
+		var minbox=document.getElementsByClassName("minbox")[0];
+		var bigbox=document.getElementById("bigbox");
+		var bigimg=bigbox.children[0];
+		var oimg=bigbox.children[0];
+			smallbox.onmousemove=function(e){
+			minbox.style.display="block";
+			bigbox.style.display="block";
+			//sportive(bigbox,{"opacity":100})
+			var evt=e || event;
+			var _left=e.pageX-minbox.offsetWidth/2 -smallbox.offsetLeft-detail.offsetLeft;
+			var _top=e.pageY-minbox.offsetHeight/2-smallbox.offsetTop-detail.offsetTop;
+			
+			if(_left<=0){
+				_left=0;
+			}
+			if(_left>=smallbox.offsetWidth-minbox.offsetWidth){
+				_left=smallbox.offsetWidth-minbox.offsetWidth;
+			}
+			if(_top<=0){
+				_top=0;
+			}
+			if(_top>=smallbox.offsetHeight-minbox.offsetHeight){
+				_top=smallbox.offsetHeight-minbox.offsetHeight;
+			}
+			minbox.style.left=_left+"px"
+			minbox.style.top=_top+"px"
+			
+			var _left2=-_left*(oimg.offsetWidth/bigbox.offsetWidth);
+			var _top2=-_top*(oimg.offsetHeight/bigbox.offsetHeight);
+			oimg.style.left=_left2+"px";
+			oimg.style.top=_top2+"px";
+		
+		smallbox.onmouseout=function(){
+			minbox.style.display="none"
+			bigbox.style.display="none";
+		}
+	}
         //cookie购物车记录保存
-        var cok = document.getElementById("cok");
-        var car1 = document.getElementById("car1")[0];
-        console.log(car1);
+      var cok = document.getElementById("cok");
+      var car = document.getElementById("car1");
+          cok.onclick = function(){
+          	
+          }
         
 		</script>
 	</body>
