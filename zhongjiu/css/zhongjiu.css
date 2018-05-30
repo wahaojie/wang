@@ -66,6 +66,7 @@ input,a{outline:none;}
 			#nav #nav2 li div {
         top: 2px;
         width: 220px;
+        height: auto;
         position: absolute;
         left:213px;
         background: white;

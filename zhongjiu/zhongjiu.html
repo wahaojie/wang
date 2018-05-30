@@ -624,6 +624,26 @@
 				
 			})
 			//
+			Ajax("json/menu.json",foo);
+			
+			function foo(data){
+			var oul = document.getElementById("nav2")
+			var oli = oul.children; 
+			var data=JSON.parse(data);
+            for(var i=0;i<data.length;i++){
+            	var odiv = document.createElement("div");
+            	var odl=document.createElement("dl");
+            	for(j in data[i]){
+				odl.innerHTML+="<dt>"+j+"</dt>"
+				for(var k=0;k<data[i][j].length;k++){
+					odl.innerHTML+="<dd>"+data[i][j][k]+"</dd>"
+				}
+			}
+            odiv.appendChild(odl)
+			
+			oli[i].appendChild(odiv);
+          }
+	}
 		</script>
 	</body>
 </html>

@@ -131,7 +131,7 @@
         	}
         	#link li{
         		float: left;
-        		width:65px;
+        		width:70px;
         		height:17px;
         		line-height:17px;
         		
@@ -147,8 +147,6 @@
         		line-height:17px;
         		font-size: 10px;
         		float: left;
-        		border-right: 1px solid #d5ccd5;
-        		padding:0 5px 0 5px;
         	}
         	#footer{
         		padding-top:50px;

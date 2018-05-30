@@ -8,6 +8,9 @@
 		<script type="text/javascript" src="js/jquery-1.11.0.js">
 			
 		</script>
+		<script type="text/javascript" src="js/zhongjiu.js">
+			
+		</script>
 	</head>
 	<body>
 		<div id="header_wrap">
@@ -15,8 +18,8 @@
 			<ul id="header_left">
 				<li>您好，欢迎来到 中酒网！</li>
 				<li><a style="color:red" href="">去买家中心</a></li>
-				<li><a href="">请登录</a></li>
-				<li><a href="">免费注册</a></li>
+				<li><a href="denglu.html">请登录</a></li>
+				<li><a href="zhuce.html">免费注册</a></li>
 			</ul>
 			<ul id="header_right">
 				<li><a href="">我的中酒网</a></li>
@@ -71,7 +74,7 @@
 					</a>
 					
 				</li>
-				<li><a href="">首页</a></li>
+				<li><a href="zhongjiu.html">首页</a></li>
 				<li><a href="">白酒专区</a></li>
 				<li><a href="">红洋酒专区</a></li>
 				<li><a href="">天佑德青稞酒</a></li>
@@ -126,10 +129,34 @@
 					</li>
 				</ul>
 			</div>
-			<div id="lase">
+			<ul id="last">
+				
 			</div>
 		</div>
-		
+		<script type="text/javascript">
+	var data = {"10001":{id:1,name:"华夏长城干红葡萄酒 750ml",imgs:"img/1_350(12).png",jiage: "￥198.00",leiname:"白酒",lei:"五粮液",letter:"五粮液原厂出品，优质浓香型白酒，精选五粮酿造，经典水晶盒包装"},
+	 "10002":{id:1,name:"52°汾酒集团清典荣耀 850ml",imgs:"img/1_350(11).png",jiage: "￥198.00",leiname:"白酒",lei:"五粮液",letter:"五粮液原厂出品，优质浓香型白酒，精选五粮酿造，经典水晶盒包装"},
+	 "10003":{id:2,name:"53°茅台镇一道泓酱香传奇",imgs:"img/1_350(23).png",jiage: "￥198.00",leiname:"白酒",lei:"五粮液",letter:"五粮液原厂出品，优质浓香型白酒，精选五粮酿造，经典水晶盒包装"},
+	 "10003":{id:3,name:"52°夜光之恋魅影起泡葡萄酒",imgs:"img/1_350(64).png",jiage: "￥198.00",leiname:"白酒",lei:"五粮液",letter:"五粮液原厂出品，优质浓香型白酒，精选五粮酿造，经典水晶盒包装"},
+	 "10004":{id:4,name:"龙船康帝波尔多红酒 750ml",imgs:"img/1_350(48).png",jiage: "￥198.00",leiname:"白酒",lei:"五粮液",letter:"五粮液原厂出品，优质浓香型白酒，精选五粮酿造，经典水晶盒包装"},
+	 "10005":{id:5,name:"42度 天佑德青稞酒 海拔2600",imgs:"img/1_350(31).png",jiage: "￥198.00",leiname:"白酒",lei:"五粮液",letter:"五粮液原厂出品，优质浓香型白酒，精选五粮酿造，经典水晶盒包装"},
+	 "10006":{id:6,name:"58°百年牛栏山清香白酒",imgs:"img/1_350(5).png",jiage: "￥198.00",leiname:"白酒",lei:"五粮液",letter:"五粮液原厂出品，优质浓香型白酒，精选五粮酿造，经典水晶盒包装"},
+	 "10007":{id:7,name:"张裕干红葡萄酒 750ml",imgs:"img/1_350(39).png",jiage: "￥198.00",leiname:"白酒",lei:"五粮液",letter:"五粮液原厂出品，优质浓香型白酒，精选五粮酿造，经典水晶盒包装"},
+	 "10008":{id:8,name:"56°红星二锅头 750ml",imgs:"img/1_350(6).png",jiage: "￥198.00",leiname:"白酒",lei:"五粮液",letter:"五粮液原厂出品，优质浓香型白酒，精选五粮酿造，经典水晶盒包装"},
+	 "10009":{id:9,name:"42°西藏天佑德青稞酒-加持 500",imgs:"img/1_350.png",jiage: "￥198.00",leiname:"白酒",lei:"五粮液",letter:"五粮液原厂出品，优质浓香型白酒，精选五粮酿造，经典水晶盒包装"},
+	 "100010":{id:10,name:"45°天佑德生态三星 500ml",imgs:"img/1_350(4).png",jiage: "￥198.00",leiname:"白酒",lei:"五粮液",letter:"五粮液原厂出品，优质浓香型白酒，精选五粮酿造，经典水晶盒包装"},
+	 "100011":{id:11,name:"52°洋河梦之蓝M3梦3 500ml",imgs:"img/1_350(25).png",jiage: "￥198.00",leiname:"白酒",lei:"五粮液",letter:"五粮液原厂出品，优质浓香型白酒，精选五粮酿造，经典水晶盒包装"},
+	 "100012":{id:12,name:"52°洋河天之蓝 500ml",imgs:"img/1_350(24).png",jiage: "￥198.00",leiname:"白酒",lei:"五粮液",letter:"五粮液原厂出品，优质浓香型白酒，精选五粮酿造，经典水晶盒包装"},
+	}
+
+			var oul = document.getElementById("last");
+			
+		    for(var attr in data){
+		    	
+				oul.innerHTML += "<li><img src='" + data[attr].imgs + "'><h3>" + data[attr].jiage + "</h3><p><span>" + data[attr].name + "</span></p><input type='button' class='btn' id='" + attr + "'></li>"
+			}
+		  
+		</script>
 		<div id="footer1_wrap">
 		<div id="footer1">
 		      <dl>
