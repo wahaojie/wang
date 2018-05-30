@@ -1,4 +1,4 @@
-*{
+	*{
 				margin: 0;
 				padding: 0;
 			}
@@ -61,58 +61,64 @@
 				font-size: 12px;
 				margin-right: 20px;
 			}
-			#content{
-				height:536px;
+			#footer{
+				text-align: center;
+				margin:50px auto;
+			}
+			#form1{
+				width:890px;
+				height:580px;
+				margin: auto;
+				margin-top:10px;
 				background: #fff;
 				padding-top:30px;
-				position: relative;
 			}
-			#content span{
-				color: red;
-			}
-			input{
-				width:240px;
-				height:30px;
-				font-size: 16px;
-				outline: none;	
-			}
-			p{
-				margin-top:30px;
-				margin-left:83px;
-				width: 700px;
-			}
-			#check input{
-				width:15px;
-				height:15px;
-				margin-left:100px;
-			}
-			#check{
-				font-size: 13px;
-			}
-			#check a{
-				color:red;
-			}
-			#btn{
-				width:238px;
-				height:34px;
-				background: red;
-				color: #fff;
-				border: 0;
-				margin-top:30px;
-				margin-left:180px;
-			}
-			#footer{
-				margin:50px auto;
-                text-align: center;
-                font-size:12px;
-			}
-             #content mark{
-             	position: absolute;
-             	left:450px;
-             	top:125px;
-             	border: 1px solid red;
-             	padding:5px;
-             	width:50px;
-             	text-align: center;
-             	cursor: pointer;
-             }
+            #form1 .box1{
+            	margin:20px;
+            	height:60px;
+            }
+            #form1 .box1 .prompt{
+            	display:none ;
+            	margin-left:120px;
+            	color:red;
+            }
+            #user1,#yanzheng,#psw,#psw2,#user2{
+            	width:240px;
+            	height: 30px;
+            }
+            #form1 .box1 span{
+            	font-size:18px;
+            }
+            input{
+            	outline: none;
+            }
+            b{
+            	color:red
+            }
+            p{
+            	margin-left:50px;
+            	margin-top:-25px;
+            }
+        .box1 mark {
+        height: 50px;
+        width: 10%;
+        line-height: 44px;
+        text-align: center;
+        letter-spacing: 8px;
+        margin-left: 5px;
+        background: #CECECE;
+        cursor: pointer;
+         }
+            #check{
+            	width:20px;
+            	height:20px;
+            	margin-left:20px;
+            }
+            #btn{
+            	margin-left:170px;
+            	width:240px;
+            	height: 35px;
+            	color:#fff;
+            	background: red;
+            }
+          

@@ -17,6 +17,7 @@ function Ajax(url,fn){
 				}
 				
 			}
+    //#nav #nav2
 			Ajax("json/menu.json",foo);
 			
 			function foo(data){
@@ -38,9 +39,36 @@ function Ajax(url,fn){
 			oli[i].appendChild(odiv);
           }
 	}
-//$(function(){
-//		$(".main2-center").css("visibility","hidden");
-//		$(".main2-right").css("visibility","hidden");
-//	})
-	
-
+//main页面主题内容
+$(function(){  
+	    $(".main2-top ul li").mouseenter(function(){
+	    	console.log("aa");
+	    	var i = $(this).index(".main2-top ul li")
+		    $(".main2-right").eq(i).show().siblings("#this1").hide();
+	    })
+	     $(".main3-top ul li").mouseenter(function(){
+	    	console.log("aa");
+	    	var i = $(this).index(".main3-top ul li")
+		    $(".main3-right").eq(i).show().siblings("#this2").hide();
+	    })
+	     $(".main4-top ul li").mouseenter(function(){
+	    	console.log("aa");
+	    	var i = $(this).index(".main4-top ul li")
+		    $(".main4-right").eq(i).show().siblings("#this3").hide();
+	    })
+	      $(".main5-top ul li").mouseenter(function(){
+	    	console.log("aa");
+	    	var i = $(this).index(".main5-top ul li")
+		    $(".main5-right").eq(i).show().siblings("#this4").hide();
+	    })
+	})
+//main6-center
+	$(function(){
+		$("#ri").click(function(){
+			$("#list2").css("display","block").animate({left: "340px"}, "slow").siblings("#list1").hide();
+		})
+		$("#le").click(function(){
+			$("#list1").css("display","block").siblings("#list2").hide();
+		})
+	})
+ 

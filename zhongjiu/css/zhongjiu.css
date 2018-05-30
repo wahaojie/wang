@@ -47,6 +47,7 @@ input,a{outline:none;}
 			#nav #nav2{
 				width:200px;
 				position: absolute;
+				top:36px;
 				right: 0;
 				left:0;
 				z-index:19999;
@@ -66,7 +67,7 @@ input,a{outline:none;}
         top: 2px;
         width: 220px;
         position: absolute;
-        left:200px;
+        left:213px;
         background: white;
         display: none; }
         #nav #nav2 li div dl {
@@ -97,7 +98,8 @@ input,a{outline:none;}
             #box #fimg{
             	width:180px;
             	position: absolute;
-            	right:200px;
+            	left:1100px;
+            	right: 0;
             }
             #box #fimg img{
             	width:200px;
@@ -114,12 +116,12 @@ input,a{outline:none;}
             	float: left;
             }
             .main1{
-            	width:100%;
+            	width:1190px;
             	height:600px;
             	margin: auto;
             }
             .main1 dl{
-            	padding-top:20px;
+            	padding-top:30px;
             	border-bottom:1px solid #ddd
             }
             .main1 dt{
@@ -159,6 +161,7 @@ input,a{outline:none;}
            .main2{
            	height:700px;
            	margin-bottom:100px;
+           	overflow: hidden;
            }
            .main2 .main2-top{
            	height:40px;
@@ -173,6 +176,9 @@ input,a{outline:none;}
           .main2 .main2-top ul li{
           	float: left;
           	margin-right:30px;
+          }
+          .main2 .main2-top ul li:hover{
+          	color:red;
           }
           .main2 .main2-top h2 a{
           	font-size:15px;
@@ -210,23 +216,32 @@ input,a{outline:none;}
           }
         .main2 .main2-right{
         	padding-left:10px;
-        	width:480px;
+        	width:486px;
         	height:700px;
         	float: right;
+        	position: relative;
         }
          .main2 .main2-right li{
          	margin-left:10px;
          	float:left;
          }
+         .main2 .main2-right img{
+         	border: 1px solid #ddd;
+        	box-sizing: border-box;
+         }
+            
+         #box1,#box2,#box3,#box4{
+         	display: none;
+         }
           .main3{
            	height:750px;
+           	overflow: hidden;
            }
            .main3 .main3-top{
            	cursor: pointer;
-           	height:80px;
+           	height:40px;
            	border-bottom:1px solid #ddd;
-           	margin-bottom:10px;
-           	padding-bottom:10px;
+           	margin:10px;
            }
           .main3 .main3-top ul{
           	  float:right;
@@ -276,19 +291,25 @@ input,a{outline:none;}
         	height:700px;
         	float: left;
         }
+        .main3 .main3-right img{
+        	width:230px;
+        	height:220px;
+        	border: 1px solid #ddd;
+        	box-sizing: border-box;
+        }
          .main3 .main3-right li{
          	margin-left:10px;
          	float:left;
          }
           .main4{
            	height:750px;
+           	overflow: hidden;
            }
            .main4 .main4-top{
-           	height:80px;
+           	height:40px;
            	border-bottom:1px solid #ddd;
            	cursor:pointer;
-           	margin-bottom:10px;
-           	padding-bottom:10px;
+           	margin:10px;
            }
           .main4 .main4-top ul{
           	  float: right;
@@ -334,9 +355,18 @@ input,a{outline:none;}
           }
         .main4 .main4-right{
         	padding-left:10px;
-        	width:480px;
+        	width:486px;
         	height:700px;
         	float: left;
+        }
+        .main4 .main4-right img{
+        	border: 1px solid #ddd;
+        	box-sizing: border-box;
+        }
+            
+        .main4 #box3 img{
+        	width:150px;
+        	height:160px;
         }
          .main4 .main4-right li{
          	margin-left:10px;
@@ -344,12 +374,12 @@ input,a{outline:none;}
          }
          .main5{
            	height:750px;
+           	overflow: hidden;
            }
            .main5 .main5-top{
-           	height:80px;
+           	height:40px;
            	border-bottom:1px solid #ddd;
-           	margin-bottom:10px;
-           	padding-bottom:10px;
+           	margin:10px;
            }
           .main5 .main5-top ul{
           	  float: right;
@@ -404,12 +434,19 @@ input,a{outline:none;}
          	margin-left:10px;
          	float:left;
          }
+         .main5 .main5-right img{
+        	width:230px;
+        	height:220px;
+        	border: 1px solid #ddd;
+        	box-sizing: border-box;
+        }
          #main6{
          	width:1190px;
          	height:350px;
          	margin: auto;
          	margin-top:40px;
-         	background: yellow;
+         	position: relative;
+         	border-top:1px solid #ddd;
          }
          #main6 img{
          	width:255px;
@@ -422,3 +459,126 @@ input,a{outline:none;}
            	float: right;
            	width:255px;
            }
+           #main6 #main6-center{
+           	float: left;
+           	
+           }
+            #main6 #main6-center #list1{
+            	width:510px;
+            	height:257px;
+            	position: absolute;
+            	top:100px;
+            	left:350px;
+            }
+           #main6 #main6-center #list1 li{
+           	float: left;
+           }
+           #main6 #main6-center img{
+           	width:100px;
+           	height:48px;
+           }
+            #main6 #main6-center #le{
+            	background:url(../img/lr.png) no-repeat top;
+            	width:25px;
+            	height:40px;
+            	position: absolute;
+            	left:300px;	
+            	top:150px;
+            }
+             #main6 #main6-center #ri{
+             	background:url(../img/lr.png) no-repeat top;
+             	background-position-y:-38px;
+            	width:25px;
+            	height:40px;
+            	position: absolute;
+            	left:875px;	
+            	top:150px;
+             }
+          #main6 #main6-center #list2{
+            	width:510px;
+            	height:257px;
+            	position: absolute;
+            	top:100px;
+            	left:750px;
+            	z-index: -2;
+            	display: none;
+            }
+            #main6 #main6-center #list2 li{
+            	float: left;
+            }
+            #main6 #main6-center #list3{
+            	width:510px;
+            	height:257px;
+            	position: absolute;
+            	top:100px;
+            	left:-200px;
+            	z-index: -2;
+            	display: none;*/
+            }
+            #main6 #main6-center #list3 li{
+            	float: left;
+            }
+  menu {
+  width: 40px;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: 'font';
+  background: #2a2a2e;
+  position: fixed;
+  top: 0;
+  right: 0px;
+  z-index: 1; }
+  menu > span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: #e8e8e8;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 15px; }
+    menu > span:hover div {
+      opacity: 1;
+      left: -92px; }
+    menu > span div {
+      transition: 1s;
+      position: absolute;
+      opacity: 0;
+      left: -120px;
+      margin-top: -41px;
+      font-size: 12px;
+      width: 92px;
+      height: 42px;
+      background: #2a2a2a; }
+      menu > span div > span {
+        width: 0;
+        height: 0;
+        position: absolute;
+        content: '';
+        border-bottom: 10px dashed transparent;
+        border-top: 10px dashed transparent;
+        border-left: 10px solid #2a2a2a;
+        right: -7px;
+        top: 10px; }
+    menu > span:hover {
+      background: #e3393c; }
+  menu > a {
+    display: block;
+    width: 40px;
+    height: 120px;
+    color: #e8e8e8;
+    text-align: center;
+    line-height: 24px;
+    font-size: 15px;
+     }
+    menu > a > span {
+      display: block;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      border-radius: 50%;
+      background: #e3393c;
+      margin: 0 auto; }
+    menu > a:hover {
+      background: #e3393c; }
+ 

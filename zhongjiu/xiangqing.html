@@ -9,6 +9,9 @@
 			}
 		</style>
 		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/xiangqing.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<script type="text/javascript" src="js/cookie.js"></script>
 	</head>
 	<body>
 		<div id="header_wrap">
@@ -21,7 +24,7 @@
 			</ul>
 			<ul id="header_right">
 				<li><a href="">我的中酒网</a></li>
-				<li><a href="">购物车0件</a></li>
+				<li><a href="car.html">购物车<span id="car1" style="color: red;">0</span>件</a></li>
 				<li><a href="">微信端</a></li>
 				<li><a href="">app</a></li>
 				<li><a href="">卖家中心</a></li>
@@ -31,7 +34,7 @@
 		</div>
 		<div id="top">
 			<div id="logo">
-				<a href=""><img src="img/logo.png"/></a>
+				<a href="zhongjiu.html"><img src="img/logo.png"/></a>
 			</div>
 			<div id="gif">
 				<a href=""><img src="img/gif.gif"/></a>
@@ -79,9 +82,75 @@
 			</ul>
 		</div>
 		<div id="content">
-			<div id="main">
+			<div id="detail-wrap" id="main">
+			<div id="detail">
+				<p><span>全部　>　</span><span>白酒　>　</span><span>五粮液　>　</span><span>52° 五粮液股份有限公司 五星级 500ml（两瓶装　>　</span>
+					
+				</p>
+				<div id="smallbox">
+					<img src="img/1_350.png">
+					<div class="minbox"></div>
+				</div>
+				<div id="bigbox">
+					<img src="img/1_350(84).png">
+				</div>
+				<div id="de-c">
+					<h2>52° 五粮液股份有限公司 五星级 500ml（两瓶装
+						<p>婚庆用酒选择（新老包装随机发货）</p>
+					</h2>
+					<div id="jiage">
+						<mark>价格<span>￥ 359.00</span></mark>
+						<p style="border-bottom: 1px dashed #ccc;">
+							<span>销量</span><span>667瓶 </span>|　评价<span>446</span>｜　评分：
+						</p>
+						<p>
+							<b>促销</b>满免单笔订单满<span>99.00</span>元免运费
+						</p>
+						<p>
+							<b>库存</b>缺货
+							
+						</p>
+						<p>
+							<b>物流</b>配送至
+							<select>
+								<option>河南省 郑州市</option>
+								<option>河南省 洛阳市</option>
+							</select>|支持货到付款
+						</p>
+						<p>
+							<b>服务</b>由<span>中酒自营</span> 从北京发货，并提供售后服务
+						</p>
+						<p>
+							<b>数量</b>
+							<button id="jian">-</button>
+							<input id="shuzi" type="text" value="0">
+							<button id="jia">+</button>
+						</p>
+						<button><a href="cart.html" style="color: #fff;">立即购买</a></button>
+						<button id="cok">加入购物车<img src="img/gou.png" /></button>
+					</div>
+				</div>
+				<div id="de-r">
+					<a href="zhongjiu.html"><img src="img/logo.png"/></a>
+					<p>
+						<b>自营</b><span>中酒自营店</span>
+					</p>
+					
+					<p style="border: 0;">
+						服务支持:<br/>
+				    <img src="img/pa.gif"/>
+					</p>
+				</div>
+				<ul>
+					<li><img src="img/1_50_002.png"></li>
+					<li><img src="img/1_50_003.png"></li>
+					<li><img src="img/1_50.png"></li>
+					<li><img src="img/2_50.png"></li>		
+				</ul>
+				
 				
 			</div>
+		</div>
 		</div>
 		<div id="footer1_wrap">
 		<div id="footer1">
@@ -208,5 +277,31 @@
 				<a href=""><img src="img/authentication_09.png"/></a>
 			</p>
 		</div>
+		<script type="text/javascript">
+		//购物车加减计算
+			var shuzi = document.getElementById("shuzi");
+	        var num_jia = document.getElementById("jia");
+	        var num_jian = document.getElementById("jian");
+	          num_jia.onclick = function() {
+
+              shuzi.value = parseInt(shuzi.value) + 1;
+        }
+
+              num_jian.onclick = function() {
+
+              if(shuzi.value <= 0) {
+                shuzi.value = 0;
+            } else {
+
+                shuzi.value = parseInt(shuzi.value) - 1;
+            }
+
+        }
+        //cookie购物车记录保存
+        var cok = document.getElementById("cok");
+        var car1 = document.getElementById("car1")[0];
+        console.log(car1);
+        
+		</script>
 	</body>
 </html>

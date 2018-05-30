@@ -114,10 +114,10 @@ body,ul,li,dl,dt,dd,p{
 				font-size: 12px;
 				line-height:36px;
 				cursor: pointer;
-				border-right: 1px solid #ddd;
+			    border-right: 1px solid #ddd;
 				outline: none;
 				border: 0;
-				text-indent:5px;
+				text-indent:3px;
 			}
 			#search_form input{
 				position: absolute;
@@ -143,15 +143,16 @@ body,ul,li,dl,dt,dd,p{
 	width:1190px;
 	margin:auto;
 	margin-top:20px;
-}
-#nav{
 	height: 36px;
+	border-bottom:1px solid red;
 }
+
 #nav li{
 	float: left;
 	padding:0 35px;
 	line-height: 36px;
 	width:130px;
+	position: relative;
 }
 			#top #image{
 				position: absolute;
@@ -253,6 +254,9 @@ body,ul,li,dl,dt,dd,p{
 			#footer2 dd{
 				font-size: 12px;
 				padding-top:5px;
+			}
+			#footer2 dd a{
+				color:#000;
 			}
 			#footer3_wrap{
 				height: 35px;

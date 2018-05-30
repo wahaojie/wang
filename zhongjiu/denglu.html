@@ -7,6 +7,8 @@
         <script type="text/javascript" src="js/jquery-1.11.0.js">
         	
         </script>
+        <script type="text/javascript" src="js/zhongjiu.js">
+        </script>
 	</head>
 	<body>
 		<div id="header">
@@ -61,9 +63,10 @@
 		</div>
 			<p id="footer">Copyright © 2018   中酒网 版权所有</p>
 		<script type="text/javascript">
-			$(function(){
-				$("#input1").animate()
-			})
+		     var obtn = document.getElementById("btn");
+		     obtn.onclick = function(){
+		     	location.assign("zhongjiu.html")
+		     }
 		</script>
 	</body>
 </html>
