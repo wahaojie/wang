@@ -80,6 +80,13 @@ body,ul,li,dl,dt,dd,p{
 				float: none;
 				z-index:1999;
 			}
+			#header_right input{
+				width:15px;
+				height:15px;
+				outline: none;
+				text-align: center;
+				border:0;
+			}
 			#top{
 				height: 66px;
 				margin-top: 24px;

@@ -11,8 +11,14 @@
 		<script type="text/javascript" src="js/zhongjiu.js">
 			
 		</script>
+		<script type="text/javascript" src="js/cookie.js">
+			
+		</script>
 	</head>
 	<body>
+		<aside>
+			<span>0</span>
+		</aside>
 		<div id="header_wrap">
 		<div id="header">
 			<ul id="header_left">
@@ -134,7 +140,7 @@
 			</div>
 		</div>
 		<script type="text/javascript">
-	var data = {"10001":{id:1,name:"华夏长城干红葡萄酒 750ml",imgs:"img/1_350(12).png",jiage: "￥198.00",leiname:"白酒",lei:"五粮液",letter:"五粮液原厂出品，优质浓香型白酒，精选五粮酿造，经典水晶盒包装"},
+	var data = {"10001":{id:0,name:"华夏长城干红葡萄酒 750ml",imgs:"img/1_350(12).png",jiage: "￥198.00",leiname:"白酒",lei:"五粮液",letter:"五粮液原厂出品，优质浓香型白酒，精选五粮酿造，经典水晶盒包装"},
 	 "10002":{id:1,name:"52°汾酒集团清典荣耀 850ml",imgs:"img/1_350(11).png",jiage: "￥198.00",leiname:"白酒",lei:"五粮液",letter:"五粮液原厂出品，优质浓香型白酒，精选五粮酿造，经典水晶盒包装"},
 	 "10003":{id:2,name:"53°茅台镇一道泓酱香传奇",imgs:"img/1_350(23).png",jiage: "￥198.00",leiname:"白酒",lei:"五粮液",letter:"五粮液原厂出品，优质浓香型白酒，精选五粮酿造，经典水晶盒包装"},
 	 "10003":{id:3,name:"52°夜光之恋魅影起泡葡萄酒",imgs:"img/1_350(64).png",jiage: "￥198.00",leiname:"白酒",lei:"五粮液",letter:"五粮液原厂出品，优质浓香型白酒，精选五粮酿造，经典水晶盒包装"},
@@ -153,9 +159,24 @@
 			
 		    for(var attr in data){
 		    	
-				oul.innerHTML += "<li><img src='" + data[attr].imgs + "'><h3>" + data[attr].jiage + "</h3><p><span>" + data[attr].name + "</span></p><input type='button' class='btn' id='" + attr + "'></li>"
+				oul.innerHTML += "<li data-id = "+attr+"><img src='" + data[attr].imgs + "'><h3>" + data[attr].jiage + "</h3><p><span>" + data[attr].name + "</span></p><input type='button' class='btn' id='" + attr + "'></li>"
 			}
-		  
+		    
+		    var oli = oul.getElementsByTagName("li");
+		   for(var i = 0;i<oli.length;i++){
+		   	 oli[i].onclick = function(){
+		    	var id = this.getAttribute("data-id");
+		    	var oh3 = document.getElementsByTagName("h3")[0];
+   		        var ospan = document.getElementsByTagName("span")[0];
+   		        oh3.innerHTML = data[attr].jiage;
+   		        ospan.innerHTML = data[attr].name;
+		    	location.assign("xiangqing.html?id="+id);
+		    }
+		   	 var aBtn = document.getElementsByClassName("btn");
+		   	 var num = document.getElementsByTagName("aside");
+		   	 
+		   }
+		   
 		</script>
 		<div id="footer1_wrap">
 		<div id="footer1">

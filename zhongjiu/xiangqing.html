@@ -14,6 +14,10 @@
 		<script type="text/javascript" src="js/cookie.js"></script>
 	</head>
 	<body>
+		<aside>
+			<a href="">购物车</a>
+			<input type="text" id="car2" readonly="readonly" value="0" />
+		</aside>
 		<div id="header_wrap">
 		<div id="header">
 			<ul id="header_left">
@@ -24,7 +28,8 @@
 			</ul>
 			<ul id="header_right">
 				<li><a href="">我的中酒网</a></li>
-				<li><a href="car.html">购物车<span id="car1" style="color: red;">0</span>件</a></li>
+				<li><a href="">购物车
+					<input type="text" id="car1" value ="0" readonly="readonly" style="color: red;" />件</a></li>
 				<li><a href="">微信端</a></li>
 				<li><a href="">app</a></li>
 				<li><a href="">卖家中心</a></li>
@@ -88,7 +93,9 @@
 					
 				</p>
 				<div id="smallbox">
-					<img src="img/1_350(24).png">
+					<span id="imgs">
+						<img src="img/1_350(24).png">
+					</span>
 					<div class="minbox"></div>
 				</div>
 				<div id="bigbox">
@@ -98,7 +105,7 @@
 					<h2>42°洋河天之蓝 480ml
 					</h2>
 					<div id="jiage">
-						<mark>价格<span>￥318</span></mark>
+						<mark>￥318</mark>
 						<p style="border-bottom: 1px dashed #ccc;">
 							<span>销量</span><span>307瓶 </span>|　评价<span>446</span>｜　评分：
 							<img src="img/star.png"/>
@@ -366,19 +373,60 @@
 		}
 	}
         //cookie购物车记录保存
-      
+        function setCookie(name, value, n) {
+	       var oDate = new Date();
+	        oDate.setDate(oDate.getDate() + n);
+	        document.cookie = name + "=" + value + ";expires=" + oDate + ";path=/";
+       }
+        function getCookie(name) {
+	var str = document.cookie;
+	var arr = str.split("; ");
+	for(var i = 0; i < arr.length; i++) {
+		var newArr = arr[i].split("=");
+		if(newArr[0] === name) {
+			return newArr[1];
+		}
+	}
+}       
+
           cok.onclick = function(){
           	var cok = document.getElementById("cok");
-            var car = document.getElementById("car1")[0];
-          	console.log(car);
-          	if(car==undefined){
-          		car = 1;
-          	}else{
-          		car++;
-          	}
-          	
+            var car1 = document.getElementById("car1");
+            var car2 = document.getElementById("car2");
+          	car2.value = parseInt(car2.value) + parseInt(shuzi.value);
+	        car1.value = car2.value;
+	        var str = location.search;
+   
+            var id1 = str.split("=")[0];
+            var id2 = str.split("=")[1];
+            console.log(id1,id2)
+            for(var attr in data){
+            
+	        if(getCookie("cart") !== undefined) {
+				var obj = JSON.parse(getCookie("cart"));
+			} else {
+				var obj = {};
+			}
+			var sum = 0;
+			for(var b in obj) {
+				sum += obj[b];
+			}
+	        var productId = this.getAttribute("data[attr].id");
+					if(obj[productId] == undefined) {
+						obj[productId] = 1;
+					} else {
+						obj[productId]++;
+					}
+					var sum = 0;
+					for(var b in obj) {
+						sum += obj[b];
+					}
+
+					cart2.value = sum;
+	          var set = JSON.stringify(obj);
+	        setCookie("cart", set, 7);
           }
-        
+        }
 		</script>
 	</body>
 </html>

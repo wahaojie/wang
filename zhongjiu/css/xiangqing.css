@@ -1,3 +1,28 @@
+aside {
+  width: 27px;
+  height: 800px;
+  box-sizing: border-box;
+  background: #2a2a2e;
+  position: fixed;
+  top:0;
+  padding-top: 200px;
+  right: 0;
+  text-align: center;
+   }
+  aside a{
+  	color:#fff;
+  }
+  aside input{
+  	text-align:center;
+  	display: block;
+  	background: red;
+  	width:27px;
+  	height:27px;
+  	color:#fff;
+  	border-radius: 50%;
+  	border: 0;
+  	outline: none;
+  }
 #detail {
   width: 1190px;
   margin: 0 auto; }
@@ -98,17 +123,13 @@
           width: 100%;
           height: 52px;
           line-height: 52px;
-          font-size: 18px;
-          color: #666;
+          font-size: 22px;
+          font-weight: 900;
+          color: red;
           padding-left: 10px;
           box-sizing: border-box;
           background: url(../img/xbj1.jpg) repeat-x; }
-          #detail-wrap #detail #de-c #jiage mark span {
-            font-size: 22px;
-            color: red;
-            font-weight: 900;
-            padding: 0 15px 0 5px;
-            border-right: 1px dashed #ccc; }
+          
         #detail-wrap #detail #de-c #jiage p {
           height: 52px;
           line-height: 52px;

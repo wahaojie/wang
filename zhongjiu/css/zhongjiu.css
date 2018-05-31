@@ -541,6 +541,15 @@ input,a{outline:none;}
     menu > span:hover div {
       opacity: 1;
       left: -92px; }
+      menu #car2{
+      	width:26px;
+      	height:26px;
+      	text-align: center;
+      	border-radius: 50%;
+      	background:#e3393c;
+      	border:0;
+      	color: #fff;
+      }
     menu > span div {
       transition: 1s;
       position: absolute;
@@ -562,7 +571,7 @@ input,a{outline:none;}
         right: -7px;
         top: 10px; }
     menu > span:hover {
-      background: #e3393c; }
+      background: #e3393c;}
   menu > a {
     display: block;
     width: 40px;
