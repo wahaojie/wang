@@ -15,7 +15,7 @@
 	</head>
 	<body>
 		<aside>
-			<a href="">购物车</a>
+			<a href="cart.html">购物车</a>
 			<input type="text" id="car2" readonly="readonly" value="0" />
 		</aside>
 		<div id="header_wrap">
@@ -28,7 +28,7 @@
 			</ul>
 			<ul id="header_right">
 				<li><a href="">我的中酒网</a></li>
-				<li><a href="">购物车
+				<li><a href="cart.html">购物车
 					<input type="text" id="car1" value ="0" readonly="readonly" style="color: red;" />件</a></li>
 				<li><a href="">微信端</a></li>
 				<li><a href="">app</a></li>
@@ -324,7 +324,6 @@
 				oli[i].style.border="2px solid red"
 				var od=document.createElement("div");
 				od.className="minbox";
-				//console.log(oli[i].innerHTML);
 				var asd=toString(oli[i].innerHTML)
 				smallbox.innerHTML=oli[i].innerHTML;
 				smallbox.appendChild(od);
@@ -368,7 +367,7 @@
 			oimg.style.top=_top2+"px";
 		
 		smallbox.onmouseout=function(){
-			minbox.style.display="none"
+			minbox.style.display="none";
 			bigbox.style.display="none";
 		}
 	}
@@ -401,8 +400,7 @@
             var id2 = str.split("=")[1];
             console.log(id1,id2)
             for(var attr in data){
-            
-	        if(getCookie("cart") !== undefined) {
+            if(getCookie("cart") !== undefined) {
 				var obj = JSON.parse(getCookie("cart"));
 			} else {
 				var obj = {};
@@ -411,22 +409,20 @@
 			for(var b in obj) {
 				sum += obj[b];
 			}
+	       
+			//cart2.value = sum;
 	        var productId = this.getAttribute("data[attr].id");
-					if(obj[productId] == undefined) {
+					if(obj[productId] == undefined){
 						obj[productId] = 1;
 					} else {
 						obj[productId]++;
 					}
-					var sum = 0;
-					for(var b in obj) {
-						sum += obj[b];
-					}
-
-					cart2.value = sum;
+					
 	          var set = JSON.stringify(obj);
 	        setCookie("cart", set, 7);
-          }
+         }
         }
+      
 		</script>
 	</body>
 </html>
