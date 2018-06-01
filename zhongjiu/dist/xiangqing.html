@@ -398,10 +398,29 @@
    
             var id1 = str.split("=")[0];
             var id2 = str.split("=")[1];
-            console.log(id1,id2);
-            
-	        
-         
+            console.log(id1,id2)
+            for(var attr in data){
+            if(getCookie("cart") !== undefined) {
+				var obj = JSON.parse(getCookie("cart"));
+			} else {
+				var obj = {};
+			}
+			var sum = 0;
+			for(var b in obj) {
+				sum += obj[b];
+			}
+	       
+			//cart2.value = sum;
+	        var productId = this.getAttribute("data[attr].id");
+					if(obj[productId] == undefined){
+						obj[productId] = 1;
+					} else {
+						obj[productId]++;
+					}
+					
+	          var set = JSON.stringify(obj);
+	        setCookie("cart", set, 7);
+         }
         }
       
 		</script>

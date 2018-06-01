@@ -1,0 +1,124 @@
+	*{
+				margin: 0;
+				padding: 0;
+			}
+			li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			body{
+				background: #eef3fa;
+			}
+			#header,#content,#footer,#top,#list,#content{
+				width:890px;
+				margin: auto;
+			}
+			#header{
+				background: #f7f7f7;
+			}
+			#header{
+				background: #f7f7f7;
+				height:12px;
+				padding:7px 0;
+				line-height: 12px;
+			}
+			#left{
+				float: left;
+				font-size: 12px;
+			}
+			#right{
+				float: right;
+			}
+			#right li{
+				float: left;
+				font-size: 12px;
+				margin-right: 12px;
+			}
+			#top{
+				height:80px;
+				margin-top:12px;
+				position: relative;
+			}
+			#top a{
+				padding:0 12px;
+			}
+			#top span{
+				position: absolute;
+				left:250px;
+				top:10px;
+				font-size: 26px;
+				font-weight: 900;
+				background: #f1f1f1;
+				padding:3px;
+			}
+			#list{
+				height: 25px;
+			}
+			#list #ppt{
+				float: right;
+				font-size: 12px;
+				margin-right: 20px;
+			}
+			#footer{
+				text-align: center;
+				margin:50px auto;
+			}
+			#form1{
+				width:890px;
+				height:580px;
+				margin: auto;
+				margin-top:10px;
+				background: #fff;
+				padding-top:30px;
+			}
+            #form1 .box1{
+            	margin:20px;
+            	height:60px;
+            }
+            #form1 .box1 .prompt{
+            	display:none ;
+            	margin-left:120px;
+            	color:red;
+            }
+            #user1,#yanzheng,#psw,#psw2,#user2{
+            	width:240px;
+            	height: 30px;
+            }
+            #form1 .box1 span{
+            	font-size:18px;
+            }
+            input{
+            	outline: none;
+            }
+            b{
+            	color:red
+            }
+            p{
+            	margin-left:50px;
+            	margin-top:-25px;
+            }
+        .box1 mark {
+        height: 50px;
+        width: 10%;
+        line-height: 44px;
+        text-align: center;
+        letter-spacing: 8px;
+        margin-left: 5px;
+        background: #CECECE;
+        cursor: pointer;
+         }
+            #check{
+            	width:20px;
+            	height:20px;
+            	margin-left:20px;
+            }
+            #btn{
+            	margin-left:170px;
+            	width:240px;
+            	height: 35px;
+            	color:#fff;
+            	background: red;
+            }
+          

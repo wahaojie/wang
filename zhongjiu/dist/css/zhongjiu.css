@@ -1,0 +1,594 @@
+
+*{
+	margin: 0;
+	padding:0
+}
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{ font-family:"微软雅黑";}
+input,a{outline:none;}
+#box {
+				width:100%;
+				height:500px;
+				position:relative;
+			}
+			.content li{
+				width: 100%;
+				height:520px;
+				list-style: none;
+				position:absolute;
+				left:0;
+			}
+			#carousel .nums{
+				list-style: none;
+				position:absolute;
+				top:470px;
+				left:700px;
+			}
+			.nums .num{
+				float:left;
+				width:15px;
+				height:15px;
+				background-color: #fff;
+				border-radius:100%;
+				margin-left:10px;
+				cursor: pointer;
+			}
+			
+			.nums .bg{
+				opacity:0.5;
+			}
+			#nav{
+				position: relative;
+			}
+			#nav #nav2{
+				width:200px;
+				position: absolute;
+				top:36px;
+				right: 0;
+				left:0;
+				z-index:19999;
+				height:515px;
+				background: #3c4750;
+			}
+			#nav #nav2 li{
+				float: none;
+				margin-top:10px;
+				margin-left:-13px;
+			}
+			#nav #nav2 li a{
+				color:#fff;
+				font-size: 12px;
+			}
+			#nav #nav2 li div {
+        top: 2px;
+        width: 220px;
+        height: auto;
+        position: absolute;
+        left:213px;
+        background: white;
+        display: none; }
+        #nav #nav2 li div dl {
+          width: 500px;
+          border: 1px solid #cecece;
+          border-top: 0;
+          font-size: 12px;
+          padding: 6px 15px;
+          overflow: hidden;
+          background: white; 
+          height:485px;
+           }
+           #nav #nav2 li:hover div{
+           	display: block;
+           }
+          #nav #nav2 li div dl dt {
+            font-size: 14px;
+            color: #000;
+            width: 100%;
+            float:left;
+            border-bottom: 1px solid #000;
+            }
+          #nav #nav2 li div dl dd {
+            font-size: 12px;
+            float: left;
+            width:32%;
+             }
+            #box #fimg{
+            	width:180px;
+            	position: absolute;
+            	left:1100px;
+            	right: 0;
+            }
+            #box #fimg img{
+            	width:200px;
+            	height:256px;
+            }
+             #box #fimg img:hover{
+             	transform: translateX(-10px);
+             	transition: .5s;
+             }
+            #content div h3 a{
+            	font-size: 12px;
+            }
+            .main1-content li{
+            	float: left;
+            }
+            .main1{
+            	width:1190px;
+            	height:600px;
+            	margin: auto;
+            }
+            .main1 dl{
+            	padding-top:30px;
+            	border-bottom:1px solid #ddd
+            }
+            .main1 dt{
+            	border-top:2px solid red;
+            	width: 180px;
+            	padding:10px 0;
+            	text-align: center;
+            	border-left:1px solid #ddd;
+            	border-right:1px solid #ddd;
+            }
+            .main1-top dd{
+            	float: right;
+            	margin-top:-40px;
+            }
+            .main1-content{
+            	width: 100%;
+            	overflow: hidden;
+            }
+            .main1-content li{
+            	margin:20px 25px 20px 0;
+            	position: relative;
+            	float: left;
+            }
+            .main1-content li a{
+            	display: block;
+              width: 210px;
+              height: 220px;
+              position: relative;
+            }
+            .main1-content li a img{
+            	position: absolute;
+            }
+            .main1-content li:hover a img {
+              transform: translateX(-10px);
+              transition: .5s;
+           }
+           .main2{
+           	height:700px;
+           	margin-bottom:100px;
+           	overflow: hidden;
+           }
+           .main2 .main2-top{
+           	height:40px;
+           	border-bottom: 1px solid #ddd;
+           	cursor: pointer;
+           	margin-bottom:10px;
+           }
+          .main2 .main2-top ul{
+          	  float: right;
+          	  margin-top:-30px;
+          }
+          .main2 .main2-top ul li{
+          	float: left;
+          	margin-right:30px;
+          }
+          .main2 .main2-top ul li:hover{
+          	color:red;
+          }
+          .main2 .main2-top h2 a{
+          	font-size:15px;
+          	border-left:5px solid red;
+          	color:#000;
+          	padding-left:15px;
+          }
+          .main2 .main2-left{
+          	position: relative;
+          	float: left;
+          	width:220px;
+          	height:700px;
+          	background:url(../img/floor_ROne_20170726113025864767.jpg) no-repeat;
+          }
+          .main2 .main2-left a img{
+          	display: block;
+          	width:220px;
+            position: absolute;
+            top:460px;
+          }
+          .main2-left .lun{
+          	height:100px;
+          	position: absolute;
+          	top:175px;
+          }
+          .main2 .main2-left .lun li{
+          	float: left;
+          	margin-left: 5px;
+          }
+          .main2 .main2-center{
+          	padding-left: 10px;
+          	width:460px;
+          	height:700px;
+          	float:left;
+          }
+        .main2 .main2-right{
+        	padding-left:10px;
+        	width:486px;
+        	height:700px;
+        	float: right;
+        	position: relative;
+        }
+         .main2 .main2-right li{
+         	margin-left:10px;
+         	float:left;
+         }
+         .main2 .main2-right img{
+         	border: 1px solid #ddd;
+        	box-sizing: border-box;
+         }
+            
+         #box1,#box2,#box3,#box4{
+         	display: none;
+         }
+          .main3{
+           	height:750px;
+           	overflow: hidden;
+           }
+           .main3 .main3-top{
+           	cursor: pointer;
+           	height:40px;
+           	border-bottom:1px solid #ddd;
+           	margin:10px;
+           }
+          .main3 .main3-top ul{
+          	  float:right;
+          	  margin-top:-30px;
+          }
+          .main3 .main3-top ul li{
+          	float: left;
+          	margin-right:30px;
+          }
+          .main3 .main3-top h2 a{
+          	font-size:15px;
+          	border-left:5px solid red;
+          	color:#000;
+          	padding-left:15px;
+          }
+          .main3 .main3-left{
+          	position: relative;
+          	float: left;
+          	width:220px;
+          	height:700px;
+          	background:url(../img/floor_ROne_20170724111338643091.jpg) no-repeat;
+          }
+          .main3 .main3-left a img{
+          	display: block;
+          	width:220px;
+            position: absolute;
+            top:460px;
+          }
+          .main3-left .lun{
+          	height:100px;
+          	position: absolute;
+          	top:175px;
+          }
+          .main3 .main3-left .lun li{
+          	float: left;
+          	margin-left: 5px;
+          }
+          .main3 .main3-center{
+          	padding-left: 10px;
+          	width:460px;
+          	height:700px;
+          	float:left;
+          }
+        .main3 .main3-right{
+        	padding-left:10px;
+        	width:480px;
+        	height:700px;
+        	float: left;
+        }
+        .main3 .main3-right img{
+        	width:230px;
+        	height:220px;
+        	border: 1px solid #ddd;
+        	box-sizing: border-box;
+        }
+         .main3 .main3-right li{
+         	margin-left:10px;
+         	float:left;
+         }
+          .main4{
+           	height:750px;
+           	overflow: hidden;
+           }
+           .main4 .main4-top{
+           	height:40px;
+           	border-bottom:1px solid #ddd;
+           	cursor:pointer;
+           	margin:10px;
+           }
+          .main4 .main4-top ul{
+          	  float: right;
+          	  margin-top:-30px;
+          }
+          .main4 .main4-top ul li{
+          	float: left;
+          	margin-right:30px;
+          }
+          .main4 .main4-top h2 a{
+          	font-size:15px;
+          	border-left:5px solid red;
+          	color:#000;
+          	padding-left:15px;
+          }
+          .main4 .main4-left{
+          	position: relative;
+          	float: left;
+          	width:220px;
+          	height:700px;
+          	background:url(../img/floor_ROne_20160921104707309411.jpg) no-repeat;
+          }
+          .main4 .main4-left a img{
+          	display: block;
+          	width:220px;
+            position: absolute;
+            top:460px;
+          }
+          .main4-left .lun{
+          	height:100px;
+          	position: absolute;
+          	top:175px;
+          }
+          .main4 .main4-left .lun li{
+          	float: left;
+          	margin-left: 5px;
+          }
+          .main4 .main4-center{
+          	padding-left: 10px;
+          	width:460px;
+          	height:700px;
+          	float:left;
+          }
+        .main4 .main4-right{
+        	padding-left:10px;
+        	width:486px;
+        	height:700px;
+        	float: left;
+        }
+        .main4 .main4-right img{
+        	border: 1px solid #ddd;
+        	box-sizing: border-box;
+        }
+            
+        .main4 #box3 img{
+        	width:150px;
+        	height:160px;
+        }
+         .main4 .main4-right li{
+         	margin-left:10px;
+         	float:left;
+         }
+         .main5{
+           	height:750px;
+           	overflow: hidden;
+           }
+           .main5 .main5-top{
+           	height:40px;
+           	border-bottom:1px solid #ddd;
+           	margin:10px;
+           }
+          .main5 .main5-top ul{
+          	  float: right;
+          	  margin-top:-30px;
+          }
+          .main5 .main5-top ul li{
+          	float: left;
+          	margin-right:30px;
+          	cursor:pointer;
+          }
+          .main5 .main5-top h2 a{
+          	font-size:15px;
+          	border-left:5px solid red;
+          	color:#000;
+          	padding-left:15px;
+          }
+          .main5 .main5-left{
+          	position: relative;
+          	float: left;
+          	width:220px;
+          	height:700px;
+          	background:url(../img/floor_ROne_20161008134147452597.jpg) no-repeat;
+          }
+          .main5 .main5-left a img{
+          	display: block;
+          	width:220px;
+            position: absolute;
+            top:460px;
+          }
+          .main5-left .lun{
+          	height:100px;
+          	position: absolute;
+          	top:175px;
+          }
+          .main5 .main5-left .lun li{
+          	float: left;
+          	margin-left: 5px;
+          }
+          .main5 .main5-center{
+          	padding-left: 10px;
+          	width:460px;
+          	height:700px;
+          	float:left;
+          }
+        .main5 .main5-right{
+        	padding-left:10px;
+        	width:480px;
+        	height:700px;
+        	float: left;
+        }
+         .main5 .main5-right li{
+         	margin-left:10px;
+         	float:left;
+         }
+         .main5 .main5-right img{
+        	width:230px;
+        	height:220px;
+        	border: 1px solid #ddd;
+        	box-sizing: border-box;
+        }
+         #main6{
+         	width:1190px;
+         	height:350px;
+         	margin: auto;
+         	margin-top:40px;
+         	position: relative;
+         	border-top:1px solid #ddd;
+         }
+         #main6 img{
+         	width:255px;
+         }
+          #main6 #main6-left{
+          	width:255px;
+          	float: left;
+          }
+           #main6 #main6-right{
+           	float: right;
+           	width:255px;
+           }
+           #main6 #main6-center{
+           	float: left;
+           	
+           }
+            #main6 #main6-center #list1{
+            	width:510px;
+            	height:257px;
+            	position: absolute;
+            	top:100px;
+            	left:350px;
+            }
+           #main6 #main6-center #list1 li{
+           	float: left;
+           }
+           #main6 #main6-center img{
+           	width:100px;
+           	height:48px;
+           }
+            #main6 #main6-center #le{
+            	background:url(../img/lr.png) no-repeat top;
+            	width:25px;
+            	height:40px;
+            	position: absolute;
+            	left:300px;	
+            	top:150px;
+            }
+             #main6 #main6-center #ri{
+             	background:url(../img/lr.png) no-repeat top;
+             	background-position-y:-38px;
+            	width:25px;
+            	height:40px;
+            	position: absolute;
+            	left:875px;	
+            	top:150px;
+             }
+          #main6 #main6-center #list2{
+            	width:510px;
+            	height:257px;
+            	position: absolute;
+            	top:100px;
+            	left:750px;
+            	z-index: -2;
+            	display: none;
+            }
+            #main6 #main6-center #list2 li{
+            	float: left;
+            }
+            #main6 #main6-center #list3{
+            	width:510px;
+            	height:257px;
+            	position: absolute;
+            	top:100px;
+            	left:-200px;
+            	z-index: -2;
+            	display: none;*/
+            }
+            #main6 #main6-center #list3 li{
+            	float: left;
+            }
+  menu {
+  width: 40px;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: 'font';
+  background: #2a2a2e;
+  position: fixed;
+  top: 0;
+  right: 0px;
+  z-index: 1; }
+  menu > span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: #e8e8e8;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 15px; }
+    menu > span:hover div {
+      opacity: 1;
+      left: -92px; }
+      menu #car2{
+      	width:26px;
+      	height:26px;
+      	text-align: center;
+      	border-radius: 50%;
+      	background:#e3393c;
+      	border:0;
+      	color: #fff;
+      }
+    menu > span div {
+      transition: 1s;
+      position: absolute;
+      opacity: 0;
+      left: -120px;
+      margin-top: -41px;
+      font-size: 12px;
+      width: 92px;
+      height: 42px;
+      background: #2a2a2a; }
+      menu > span div > span {
+        width: 0;
+        height: 0;
+        position: absolute;
+        content: '';
+        border-bottom: 10px dashed transparent;
+        border-top: 10px dashed transparent;
+        border-left: 10px solid #2a2a2a;
+        right: -7px;
+        top: 10px; }
+    menu > span:hover {
+      background: #e3393c;}
+  menu > a {
+    display: block;
+    width: 40px;
+    height: 120px;
+    color: #e8e8e8;
+    text-align: center;
+    line-height: 24px;
+    font-size: 15px;
+     }
+    menu > a > span {
+      display: block;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      border-radius: 50%;
+      background: #e3393c;
+      margin: 0 auto; }
+    menu > a:hover {
+      background: #e3393c; }
+ 

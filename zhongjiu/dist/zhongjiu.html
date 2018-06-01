@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>中酒网首页</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/zhongjiu.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.0.js">
+		</script>
+		<script type="text/javascript" src="js/lunbo.js">
+		</script>
+		<script type="text/javascript" src="js/zhongjiu.js">
+		</script>
+	</head>
+	<body>
+		<div id="floorNav">
+			<ul>
+				<li>1F<span>帮您</span></li>
+				<li>2F<span>白酒</span></li>
+				<li>3F<span>葡萄</span></li>
+				<li>4F<span>洋酒</span></li>
+				<li>TOP</li>
+			</ul>
+		</div>
+		<div id="header_wrap">
+		<div id="header">
+			<ul id="header_left" id="nav1">
+				<li>您好，欢迎来到 中酒网！</li>
+				<li><a style="color:red" href="">去买家中心</a></li>
+				<li><a href="denglu.html">请登录</a></li>
+				<li><a href="zhuce.html">免费注册</a></li>
+			</ul>
+			<ul id="header_right">
+				<li><a href="">我的中酒网</a></li>
+				<li><a href="">购物车
+					<input type="text" id="car1" value ="0" readonly="readonly" style="color: red;" />件</a></li>
+				<li><a href="">微信端</a></li>
+				<li><a href="">app</a></li>
+				<li><a href="">卖家中心</a></li>
+				<li><a href="">订购热线：400-798-9999</a></li>
+			</ul>
+		</div>
+		</div>
+		<div id="top">
+			<div id="logo">
+				<a href=""><img src="img/logo.png"/></a>
+			</div>
+			<div id="gif">
+				<a href=""><img src="img/gif.gif"/></a>
+			</div>
+			
+			<div id="search">
+				<div id="search_form">
+					<select>
+						<option>商品</option>
+						<option>店铺</option>
+					</select>
+					<input type="text" id="" value="" />
+				</div>
+				<input type="button" id="btn" value="搜索" />
+				<ul style="font-size: 12px;">
+					<li><a href="">西凤</a></li>
+					<li><a href="">青稞酒</a></li>
+					<li><a href="">洋河</a></li>
+					<li><a href="">习酒</a></li>
+					<li><a href="">小糊涂仙</a></li>
+					<li><a href="">酒鬼酒</a></li>
+					<li><a href="">张裕</a></li>
+					<li><a href="">拉菲</a></li>
+					<li><a href="">董酒</a></li>
+					<li><a href="">华夏长城</a></li>
+				</ul>
+			</div>
+			<div id="image">
+				<a href=""><img src="img/201802011650389711990.jpg"/></a>
+			</div>
+		</div>
+		<div id="nav">
+			<ul>
+				<li style="background: #dd0207;">
+					<a href="liebiao.html" style="color: #fff;">
+						<img src="img/nav.png"/>
+						全部商品分类
+					</a>
+					<ul id="nav2">
+						<li>
+							<p><a href="">白酒</a></p>
+							<span>
+								<a href="">茅台</a>
+								<a href="">五粮液</a>
+								<a href="" style="background: #fff;color: #000;">天佑德</a>
+							</span>
+						</li>
+						<li>
+							<p><a href="">葡萄酒</a></p>
+							<span>
+								<a href="">拉菲</a>
+								<a href="">张裕</a>
+								<a href="" style="background: #fff;color: #000;">马克斯威</a>
+							</span>
+						</li>
+						<li>
+							<p><a href="">洋酒</a></p>
+							<span>
+								<a href="" style="background: #fff;color: #000;">马爹利</a>
+								<a href="">人头马</a>
+								<a href="">芝华士</a>
+							</span>
+						</li>
+						<li>
+							<p><a href="">黄酒</a></p>
+							<span>
+								<a href="">尧喝货</a>
+								<a href="" style="background: #fff;color: #000;">唐宋</a>
+								<a href="">塔牌</a>
+							</span>
+						</li>	
+						<li>
+							<p><a href="">礼盒专区</a></p>
+							<span>
+								<a href="" style="background: #fff;color: #000;">五粮液五星级</a>
+							</span>
+						</li>
+						<li>
+							<p><a href="">婚庆专区</a></p>
+							<span>
+								<a href="">茅台</a>
+								<a href="">拉菲</a>
+								<a href="">五粮液</a>
+								
+							</span>
+						</li>
+					</ul>
+				</li>
+				<li><a href="">首页</a></li>
+				<li><a href="">白酒专区</a></li>
+				<li><a href="">红洋酒专区</a></li>
+				<li><a href="">天佑德青稞酒</a></li>
+			</ul>
+		</div>
+		<div id="carousel">
+			<div id="box">
+				<ul class="content">
+					<li class="list" style="background: url(img/banner1.jpg) no-repeat center;"></li>
+					<li class="list" style="background: url(img/banner2.jpg) no-repeat center;"></li>
+					<li class="list" style="background: url(img/banner3.jpg) no-repeat center;"></li>
+					<li class="list" style="background: url(img/banner4.jpg) no-repeat center;"></li>
+					<li class="list" style="background: url(img/banner5.jpg) no-repeat center;"></li>
+					<li class="list" style="background: url(img/banner6.jpg) no-repeat center;"></li>
+					<li class="list" style="background: url(img/banner7.jpg) no-repeat center;"></li>
+					<li class="list" style="background: url(img/banner8.jpg) no-repeat center;"></li>
+				</ul>
+				<ul class="nums">
+					<li class="num bg"></li>
+					<li class="num"></li>
+					<li class="num"></li>
+					<li class="num"></li>
+					<li class="num"></li>
+					<li class="num"></li>
+					<li class="num"></li>
+					<li class="num"></li>
+				</ul>
+				<div id="fimg">
+				<img src="img/201709121117114935610.jpg"/>
+				<img src="img/201708221047305409910.jpg"/>
+			</div>
+			</div>
+			
+		</div>
+		<div id="content">
+				<div class="main1">
+				<dl class="main1-top">
+					<dt><a href="">热销爆款</a></dt>
+					<dd><a href="#">更多&gt;&gt;</a></dd>
+				</dl>
+				<ul class="main1-content">
+					<li>
+						<a href="xiangqing.html?id=1"><img src="img/1_220(1).png"></a>
+					</li>
+					<li>
+						<a href="xiangqing.html?id=2"><img src="img/1_220(2).png"></a>
+					</li>
+					<li>
+						<a href="xiangqing.html?id=3"><img src="img/1_220(3).png"></a>
+					</li>
+					<li>
+						<a href="xiangqing.html?id=4"><img src="img/1_220(4).png"></a>
+					</li>
+					<li>
+						<a href="xiangqing.html?id=5"><img src="img/1_220(5).png"></a>
+					</li>
+					<li>
+						<a href="xiangqing.html?id=6"><img src="img/1_220(6).png"></a>
+					</li>
+					<li>
+						<a href="xiangqing.html?id=7"><img src="img/1_220.png"></a>
+					</li>
+					<li>
+						<a href="xiangqing.html?id=8"><img src="img/1_220(8).png"></a>
+					</li>
+					<li>
+						<a href="xiangqing.html?id=9"><img src="img/1_220(9).png"></a>
+					</li>
+					<li>
+						<a href="xiangqing.html?id=10"><img src="img/1_220(7).png"></a>
+					</li>
+				</ul>
+			</div>
+				
+				<div id="main" class="main2">
+					<div class="main2-top">
+					<h2><a href="#">帮您选酒</a></h2>
+					<ul>
+						<li>Hot！热卖</li>
+						<li>必备口粮</li>
+						<li>送礼佳品</li>
+						<li>大型宴请</li>
+						<a href="#">更多&gt;&gt;</a>
+					</ul>
+					
+				</div>
+				<div class="main2-left">
+				    <a href=""><img src="img/floor_RSeven_20170823170519683978.jpg"/></a>
+				    <ul class="lun">
+				    	<li><img src="img/logo_322.jpg"/></li>
+				    	<li><img src="img/logo_323.jpg"/></li>
+				    	<li><img src="img/logo_324.jpg"/></li>
+				    	<li><img src="img/logo_325.jpg"/></li>
+				    	<li><img src="img/logo_326.jpg"/></li>
+				    	<li><img src="img/logo_343.jpg"/></li>
+				    	<li><img src="img/logo_642.jpg"/></li>
+				    	<li><img src="img/logo_329.jpg"/></li>
+				    	<li><img src="img/logo_330.jpg"/></li>
+				    	<li><img src="img/logo_331.jpg"/></li>
+				    	
+				    </ul>
+				</div>
+				<div class="main2-center">
+				   	<a href=""><img src="img/floor_RTwo_20180410104724982806.jpg"/></a>
+				   	<a href=""><img src="img/floor_REight_20170823170519683978.jpg"/></a>
+				</div>
+				<ul class="main2-right" id="this1">
+					<li><a href="xiangqing.html?id=11"><img src="img/floor_RSeven_20170823170812828682.jpg"/></a></li>
+					<li><a href="xiangqing.html?id=12"><img src="img/floor_RSix_20170823170945087244.jpg"/></a></li>
+					<li><a href="xiangqing.html?id=13"><img src="img/floor_RFive_20170823170646607330.jpg"/></a></li>
+					<li><a href="xiangqing.html?id=14"><img src="img/floor_RSix_20170823170646638531.jpg"/></a></li>
+					<li><a href="xiangqing.html?id=15"><img src="img/floor_RThree_20170823170519637178.jpg"/></a></li>
+					<li><a href="xiangqing.html?id=16"><img src="img/floor_RFive_20170823170519652778.jpg"/></a></li>
+				</ul>
+				<ul class="main2-right" id="box1">
+				    <li><a href="xiangqing.html?id=17"><img src="img/floor_RSeven_20170811161129655844.jpg"/></a></li>
+					<li><a href="xiangqing.html?id=18"><img src="img/floor_RFour_20170823170519652778.jpg"/></a></li>
+					<li><a href="xiangqing.html?id=19"><img src="img/floor_RThree_20170823170519637178.jpg"/></a></li>
+					<li><a href="xiangqing.html?id=20"><img src="img/floor_ScrollOne_20180123153232148329.jpg"/></a></li>
+					<li><a href="xiangqing.html?id=21"><img src="img/floor_ScrollOne_20170823170646669731.jpg"/></a></li>
+					<li><a href="xiangqing.html?id=22"><img src="img/floor_ScrollTwo_20170823170646685331.jpg"></a></li>
+			    </ul>
+				</div>
+				<div id="main" class="main3">
+					<div class="main3-top">
+					<h2><a href="#">白酒馆</a></h2>
+					<ul>
+						<li class="active2">Hot！热卖</li>
+						<li>洋河</li>
+						<li>天佑德</li>
+						<a href="#">更多&gt;&gt;</a>
+					</ul>
+					
+				    </div>
+				<div class="main3-left">
+					<ul class="lun">
+				    	<li><img src="img/logo_322.jpg"/></li>
+				    	<li><img src="img/logo_323.jpg"/></li>
+				    	<li><img src="img/logo_324.jpg"/></li>
+				    	<li><img src="img/logo_325.jpg"/></li>
+				    	<li><img src="img/logo_326.jpg"/></li>
+				    	<li><img src="img/logo_343.jpg"/></li>
+				    	<li><img src="img/logo_642.jpg"/></li>
+				    	<li><img src="img/logo_329.jpg"/></li>
+				    	<li><img src="img/logo_330.jpg"/></li>
+				    	<li><img src="img/logo_331.jpg"/></li>
+				    	
+				    </ul>
+				    <a href=""><img src="img/floor_RSeven_20170811161129655844.jpg"/></a>	
+				</div>
+				<div class="main3-center">
+				   	<a href=""><img src="img/floor_RTwo_20180410173137937802.jpg"/></a>
+				   	<a href=""><img src="img/floor_REight_20170823170646654131.jpg"/></a>
+				</div>
+				<ul class="main3-right" id="this2">
+					<li><a href="xiangqing.html?id=23"><img src="img/floor_RFive_20170823170519652778.jpg"/></a></li>
+					<li><a href="xiangqing.html?id=24"><img src="img/floor_RFive_20170823170646607330.jpg"/></a></li>
+					<li><a href="xiangqing.html?id=25"><img src="img/floor_RFour_20170906134313574430.jpg"/></a></li>
+					<li><a href="xiangqing.html?id=26"><img src="img/floor_RSix_20170823170646638531.jpg"/></a></li>
+					<li><a href="xiangqing.html?id=27"><img src="img/floor_ScrollOne_20170823170646669731.jpg"/></a></li>
+					<li><a href="xiangqing.html?id=28"><img src="img/floor_RThree_20170823170646576130.jpg"/></a></li>
+				</ul>
+				<ul class="main3-right" id="box2">
+				    <li><a href="xiangqing.html?id=29"><img src="img/1_350(24).png"/></a></li>
+					<li><a href="xiangqing.html?id=30"><img src="img/1_350(25).png"/></a></li>
+					<li><a href="xiangqing.html?id=31"><img src="img/1_350(26).png"/></a></li>
+					<li><a href="xiangqing.html?id=32"><img src="img/1_350(27).png"/></a></li>
+					<li><a href="xiangqing.html?id=33"><img src="img/1_350(28).png"/></a></li>
+					<li><a href="xiangqing.html?id=34"><img src="img/1_350(29).png"></a></li>
+			    </ul>
+				</div>
+				<div id="main" class="main4">
+					<div class="main4-top">
+					<h2><a href="#">葡萄酒馆</a></h2>
+					<ul>
+						<li class="active2">Hot！热卖</li>
+						<li>马克斯威</li>
+						<li>干红葡萄酒</li>
+						<li>起泡酒</li>
+						<li>拉菲</li>
+						<a href="#">更多&gt;&gt;</a>
+					</ul>
+					
+				    </div>
+				<div class="main4-left">
+					<ul class="lun">
+				    	<li><img src="img/logo_322.jpg"/></li>
+				    	<li><img src="img/logo_323.jpg"/></li>
+				    	<li><img src="img/logo_324.jpg"/></li>
+				    	<li><img src="img/logo_325.jpg"/></li>
+				    	<li><img src="img/logo_326.jpg"/></li>
+				    	<li><img src="img/logo_343.jpg"/></li>
+				    	<li><img src="img/logo_642.jpg"/></li>
+				    	<li><img src="img/logo_329.jpg"/></li>
+				    	<li><img src="img/logo_330.jpg"/></li>
+				    	<li><img src="img/logo_331.jpg"/></li>
+				    	
+				    </ul>
+				    <a href=""><img src="img/floor_RSeven_20170811161129655844.jpg"/></a>	
+				</div>
+				<div class="main4-center">
+				   	<a href=""><img src="img/floor_RTwo_20170531092958651200.jpg"/></a>
+				   	<a href=""><img src="img/floor_REight_20170922171302056780.jpg"/></a>
+				</div>
+				<ul class="main4-right" id="this3">
+					<li><a href="xiangqing.html?id=34"><img src="img/floor_RFive_20170823170812797482.jpg"/></a></li>
+					<li><a href="xiangqing.html?id=35"><img src="img/floor_RFour_20170823170812781882.jpg"/></a></li>
+					<li><a href="xiangqing.html?id=36"><img src="img/floor_RSeven_20170823170812828682.jpg"/></a></li>
+					<li><a href="xiangqing.html?id=37"><img src="img/floor_RSix_20170823170519668378.jpg"/></a></li>
+					<li><a href="xiangqing.html?id=38"><img src="img/floor_RSix_20170823170812813082.jpg"/></a></li>
+					<li><a href="xiangqing.html?id=39"><img src="img/floor_ScrollOne_20170823170812828682.jpg"/></a></li>
+				</ul>
+				<ul class="main4-right" id="box3">
+				    <li><a href="xiangqing.html?id=40"><img src="img/1_350(39).png"/></a></li>
+					<li><a href="xiangqing.html?id=41"><img src="img/1_350(44).png"/></a></li>
+					<li><a href="xiangqing.html?id=42"><img src="img/1_350(40).png"/></a></li>
+					<li><a href="xiangqing.html?id=43"><img src="img/1_350(41).png"/></a></li>
+					<li><a href="xiangqing.html?id=44"><img src="img/1_350(42).png"/></a></li>
+					<li><a href="xiangqing.html?id=45"><img src="img/1_350(43).png"></a></li>
+					<li><a href="xiangqing.html?id=46"><img src="img/1_350(44).png"/></a></li>
+					<li><a href="xiangqing.html?id=47"><img src="img/1_350(45).png"/></a></li>
+					<li><a href="xiangqing.html?id=48"><img src="img/1_350(46).png"></a></li>
+					<li><a href="xiangqing.html?id=49"><img src="img/1_350(41).png"/></a></li>
+					<li><a href="xiangqing.html?id=50"><img src="img/1_350(42).png"/></a></li>
+					<li><a href="xiangqing.html?id=51"><img src="img/1_350(43).png"></a></li>
+			    </ul>
+				</div>
+				<div id="main" class="main5">
+					<div class="main5-top">
+					<h2><a href="#">洋酒&啤酒馆</a></h2>
+					<ul>
+						<li class="active2">Hot！热卖</li>
+						<li>伏特加</li>
+						<li>威士忌</li>
+						<a href="#">更多&gt;&gt;</a>
+					</ul>
+					
+				    </div>
+				<div class="main5-left">
+					<ul class="lun">
+				    	<li><img src="img/logo_322.jpg"/></li>
+				    	<li><img src="img/logo_323.jpg"/></li>
+				    	<li><img src="img/logo_324.jpg"/></li>
+				    	<li><img src="img/logo_325.jpg"/></li>
+				    	<li><img src="img/logo_326.jpg"/></li>
+				    	<li><img src="img/logo_343.jpg"/></li>
+				    	<li><img src="img/logo_642.jpg"/></li>
+				    	<li><img src="img/logo_329.jpg"/></li>
+				    	<li><img src="img/logo_330.jpg"/></li>
+				    	<li><img src="img/logo_331.jpg"/></li>
+				    	
+				    </ul>
+				    <a href=""><img src="img/floor_RSeven_20170823170945102844.jpg"/></a>	
+				</div>
+				<div class="main5-center">
+				   	<a href=""><img src="img/floor_RTwo_20170531093011614822.jpg"/></a>
+				   	<a href=""><img src="img/floor_REight_20170823170945102844.jpg"/></a>
+				</div>
+				<ul class="main5-right" id="this4">
+					<li><a href=""><img src="img/floor_RFive_20170823170945087244.jpg"/></a></li>
+					<li><a href=""><img src="img/floor_RFour_20170823170945087244.jpg"/></a></li>
+					<li><a href=""><img src="img/floor_RSix_20170823170945087244.jpg"/></a></li>
+					<li><a href=""><img src="img/floor_RThree_20170823170945071644.jpg"/></a></li>
+					<li><a href=""><img src="img/floor_ScrollOne_20170823170945118444.jpg"/></a></li>
+					<li><a href=""><img src="img/floor_ScrollTwo_20170823170945118444.jpg"/></a></li>
+				</ul>
+				<ul class="main5-right" id="box4">
+				    <li><a href=""><img src="img/1_350(74).png"/></a></li>
+					<li><a href=""><img src="img/1_350(75).png"/></a></li>
+					<li><a href=""><img src="img/1_350(76).png"/></a></li>
+					<li><a href=""><img src="img/1_350(77).png"/></a></li>
+					<li><a href=""><img src="img/1_350(78).png"/></a></li>
+					<li><a href=""><img src="img/1_350(79).png"></a></li>
+			    </ul>
+			</div>
+		</div>
+		<div id="main6">
+			<div id="main6-left">
+				<a href=""><img src="img/201708221138345961900.jpg"/></a>
+			</div>
+			<div id="main6-center">
+				<span id="le"></span>
+				<ul id="list1">
+					<li><a href=""><img src="img/logo_326.jpg"/></a></li>
+					<li><a href=""><img src="img/logo_329.jpg"/></a></li>
+					<li><a href=""><img src="img/logo_330.jpg"/></a></li>
+					<li><a href=""><img src="img/logo_331.jpg"/></a></li>
+					<li><a href=""><img src="img/logo_332.jpg"/></a></li>
+					<li><a href=""><img src="img/logo_329.jpg"/></a></li>
+					<li><a href=""><img src="img/logo_329.jpg"/></a></li>
+					<li><a href=""><img src="img/logo_329.jpg"/></a></li>
+					<li><a href=""><img src="img/logo_329.jpg"/></a></li>
+					<li><a href=""><img src="img/logo_329.jpg"/></a></li>
+					<li><a href=""><img src="img/logo_329.jpg"/></a></li>
+					<li><a href=""><img src="img/logo_329.jpg"/></a></li>
+					<li><a href=""><img src="img/logo_329.jpg"/></a></li>
+					<li><a href=""><img src="img/logo_329.jpg"/></a></li>
+					<li><a href=""><img src="img/logo_329.jpg"/></a></li>
+				</ul>
+				<ul id="list2">
+				<li><a href=""><img src="img/logo_326.jpg"/></a></li>
+					<li><a href=""><img src="img/logo_329.jpg"/></a></li>
+					<li><a href=""><img src="img/logo_330.jpg"/></a></li>
+					<li><a href=""><img src="img/logo_331.jpg"/></a></li>
+					<li><a href=""><img src="img/logo_332.jpg"/></a></li>
+					<li><a href=""><img src="img/logo_329.jpg"/></a></li>
+					<li><a href=""><img src="img/logo_329.jpg"/></a></li>
+				</ul>
+				<span id="ri"></span>
+			</div>
+			<div id="main6-right">
+				<a href=""><img src="img/201609211049495626910 (1).jpg"/></a>
+			</div>
+		</div>
+		<div id="footer1_wrap">
+		<div id="footer1">
+		      <dl>
+		      	<dt id="list1"></dt>
+		      	<dd>
+		      		<h3>正品保障</h3>
+		      		<p>厂家直接 正品防伪</p>
+		      	</dd>
+		      </dl>
+		      <dl>
+		      	<dt id="list2"></dt>
+		      	<dd>
+		      		<h3>领军020</h3>
+		      		<p>中国酒类 020第一家</p>
+		      	</dd>
+		      </dl>
+		      <dl>
+		      	<dt id="list3"></dt>
+		      	<dd>
+		      		<h3>无理由退货</h3>
+		      		<p>拆封无条件退货</p>
+		      	</dd>
+		      </dl>
+		      <dl>
+		      	<dt id="list4"></dt>
+		      	<dd>
+		      		<h3>闪电配送</h3>
+		      		<p>专业配送 安全到达</p>
+		      	</dd>
+		      </dl>
+		      <dl>
+		      	<dt id="list5"></dt>
+		      	<dd>
+		      		<h3>百万口碑</h3>
+		      		<p>400万用户的配合</p>
+		      	</dd>
+		      </dl>
+		      <dl>
+		      	<dt id="list6"></dt>
+		      	<dd>
+		      		<h3>百万口碑</h3>
+		      		<p>400万用户的配合</p>
+		      	</dd>
+		      </dl>
+		</div>
+		</div>
+		<div id="footer2_wrap">
+		<div id="footer2">
+			<ul>
+				<li><a href=""><img src="img/zj.png"/></a></li>
+				<li><a href=""><img src="img/ls2.png"/></a></li>
+				<li><a href=""><img src="img/yt2.png"/></a></li>
+			</ul>
+			<dl>
+				<dt>购物指南</dt>
+				<dd><a href="">购物流程</a></dd>
+				<dd><a href="">用户注册协议</a></dd>
+				<dd><a href="">会员积分</a></dd>
+				<dd><a href="">关于发票</a></dd>
+				<dd><a href="">关于优惠券</a></dd>
+				<dd><a href="">开票说明</a></dd>
+			</dl>
+			<dl>
+				<dt>配送说明</dt>
+				<dd><a href="">关于运费</a></dd>
+				<dd><a href="">快递查询</a></dd>
+				<dd><a href="">发货与签收</a></dd>
+			</dl>
+			<dl>
+		        <dt>支付方式</dt>
+				<dd><a href="">支付宝支付</a></dd>
+				<dd><a href="">微信支付</a></dd>
+				<dd><a href="">账户余额支付</a></dd>
+			</dl>
+			<dl>
+                <dt>售后服务</dt>
+				<dd><a href="">热门常见问题</a></dd>
+				<dd><a href="">服务承诺</a></dd>
+				<dd><a href="">退款说明</a></dd>
+				<dd><a href="">退换货政策</a></dd>
+				<dd><a href="">退换货流程</a></dd>
+			</dl>
+			<dl>
+        		<dt>服务保障</dt>
+				<dd><a href="">30分钟快速响应</a></dd>
+				<dd><a href="">7*12小时贴心服务</a></dd>
+			</dl>
+			
+			<dl style="text-align: center;">
+				<dt>手机中酒</dt>
+				<dd><img src="img/mob.jpg"/></dd>
+				<dd>下载移动客户端</dd>
+			</dl>
+			<dl style="text-align: center;">
+				<dt>中酒微信</dt>
+				<dd><img src="img/qrCode.png"/></dd>
+				<dd>中酒官方微信</dd>
+			</dl>
+		</div>
+		</div>
+		<div id="footer3_wrap">
+		<div id="footer3">
+			<p>
+				<a href="">关于中酒</a><span>|</span>
+				<a href="">媒体报道</a><span>|</span>
+				<a href="">商务合作</a><span>|</span>
+				<a href="">加入中酒</a><span>|</span>
+				<a href="">商家加盟</a><span>|</span>
+				<a href="">联系我们</a>
+			</p>
+		</div>
+		</div>
+		<div id="footer4">
+			<p>
+				Copyright © 2016 中酒网(www.zhongjiu.cn) 版权所有 京ICP备12022216号-2 | 京公网安备 11010502026701 | 购买前请确认达到法定饮酒年龄！中酒网不销售任何含酒精产品给18岁以下人士！
+			</p>
+			<p>
+				公司名称：中酒时代酒业（北京）有限公司 公司地址：北京市朝阳区高碑店乡半壁店村惠河南街1111号国投尚科大厦2层E202单元办公室 联系人：刘铮 联系方式：400-798-9999 社会信用代码证：911101055938071245 食品经营许可证
+			</p>
+			<p>
+				<a href=""><img src="img/authentication_05.png"/></a>
+				<a href=""><img src="img/authentication_07.png"/></a>
+				<a href=""><img src="img/authentication_09.png"/></a>
+			</p>
+		</div>
+		<menu>
+			<span style="margin-top: 126px;">中心<div>个人中心<span></span></div></span>
+			<a href="#"><br/>购<br/>物<br/>车<br/><input type="text" value="0" readonly="readonly" id="car2"></a>
+			<span>资产<div>资产中心<span></span></div></span>
+			<span>关注<div>关注商品<span></span></div></span>
+			<span>历史<div>浏览历史<span></span></div></span>
+			<span style="font-size: 12px;">客服<div>你　我<span></span></div></span>
+		</menu>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//楼层，楼梯函数
+			$(function(){
+				var $navLi = $("#floorNav li");
+				var $condiv = $("#content #main");
+				var flag = true;
+				
+				$(window).scroll(function(){
+					if(flag){
+					
+						var scrollTop = $(this).scrollTop();
+						if(scrollTop > 700){
+							$("#floorNav").fadeIn();
+						}else{
+							$("#floorNav").fadeOut();
+						}
+						
+						$condiv.each(function(index){
+							if(scrollTop > $(this).offset().top - 400){
+								$navLi.eq(index).addClass("hover").siblings().removeClass("hover");
+							}
+						})
+						
+					}
+						
+				})
+				
+				$("#floorNav li:not(:last)").click(function(){
+					flag = false;
+					var index = $(this).index();
+					$(this).addClass("hover").siblings().removeClass("hover");
+					$("body,html").animate({"scrollTop":$condiv.eq(index).offset().top},function(){
+						flag = true;	
+					});
+					
+				})
+				$("#floorNav li:last").click(function(){
+					$("body,html").animate({"scrollTop":0});
+				})
+				
+				
+			})
+			//
+			Ajax("json/menu.json",foo);
+			
+			function foo(data){
+			var oul = document.getElementById("nav2")
+			var oli = oul.children; 
+			var data=JSON.parse(data);
+            for(var i=0;i<data.length;i++){
+            	var odiv = document.createElement("div");
+            	var odl=document.createElement("dl");
+            	for(j in data[i]){
+				odl.innerHTML+="<dt>"+j+"</dt>"
+				for(var k=0;k<data[i][j].length;k++){
+					odl.innerHTML+="<dd>"+data[i][j][k]+"</dd>"
+				}
+			}
+            odiv.appendChild(odl)
+			
+			oli[i].appendChild(odiv);
+          }
+	}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>中酒网-登录</title>
+        <link rel="stylesheet" type="text/css" href="css/denglu.css"/>
+        <script type="text/javascript" src="js/jquery-1.11.0.js">
+        	
+        </script>
+        <script type="text/javascript" src="js/zhongjiu.js">
+        </script>
+	</head>
+	<body>
+		<div id="header">
+			<div id="logo">
+				<a href="zhongjiu.html">
+				     <img src="img/logo.png"/>
+			    </a>
+			</div>
+			<span id="init">欢迎登录</span>
+		</div>
+		<div id="content">
+			<div id="left">
+				<img src="img/dzlogo.png"/>
+			</div>
+			<div id="right">
+				<ul id="list">
+					<li>扫码登录</li>
+					<li style="border: 0;"><a href="">账户登录</a></li>
+				</ul>
+				<p>公共场所不建议登录，以防账号丢失</p>
+				<div id="input1">
+					<div></div>
+					<input type="text" id="user1" value="" />
+				</div>
+				<div id="input2">
+					<div></div>
+					<input type="password" id="paw" value="" />
+				</div>
+				<input type="checkbox" id="check" value="" />
+				<div id="forget">
+					自动登录 <a href="http://www.zhongjiu.cn/findpassword">忘记密码</a>
+				</div>
+				<input type="button" id="btn" value="登录" />
+				<ul id="link">
+					<li>
+						<img src="img/qq2.png"/>
+						<a href="">QQ</a>
+					</li>
+					<li>
+						<img src="img/weibo2.png"/>
+						<a href="">微博</a>
+					</li>
+					<li>
+						<img src="img/weixin2.png"/>
+						<a href="">微信</a>
+					</li>
+					<li>
+						<a href="zhuce.html">立即注册</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+			<p id="footer">Copyright © 2018   中酒网 版权所有</p>
+		<script type="text/javascript">
+		     var obtn = document.getElementById("btn");
+		     obtn.onclick = function(){
+		     	location.assign("zhongjiu.html")
+		     }
+		</script>
+	</body>
+</html>
