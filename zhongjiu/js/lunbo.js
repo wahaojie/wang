@@ -1,4 +1,4 @@
-var i = 0;
+    var i = 0;
 			var timer = null;
 			$(function(){
 				//鼠标划过btn显示隐藏
@@ -32,7 +32,7 @@ var i = 0;
 				function show(){
 					timer = setInterval(function(){
 				 	i++;
-					if(i==8){
+					if(i==3){
 						i=0
 					}
 					move();
